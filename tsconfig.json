@@ -1,0 +1,3 @@
+{
+  "extends": "@opt-ui/config-tsconfig/tsconfig-base.json"
+}

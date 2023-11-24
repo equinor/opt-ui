@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Storybook",
+  "extends": "./tsconfig-base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "incremental": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve"
+  }
+}

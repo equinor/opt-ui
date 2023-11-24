@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "@opt-ui/config-tsconfig",
+  "version": "0.0.0",
+  "files": [
+    "./tsconfig-base.json",
+    "./tsconfig-library.json",
+    "./tsconfig-nextjs.json",
+    "./tsconfig-storybook.json"
+  ]
+}
