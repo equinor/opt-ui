@@ -1,0 +1,59 @@
+{
+  "name": "@equinor/opt-ui-base",
+  "description": "OPT UI - Style theme base preset.",
+  "version": "7.0.0",
+  "license": "MIT",
+  "keywords": [
+    "OPT",
+    "UI",
+    "preset",
+    "style-theme"
+  ],
+  "author": {
+    "name": "OPT Team",
+    "url": "https://github.com/orgs/equinor/teams/opt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/equinor/opt-ui",
+    "directory": "packages/opt-ui-base"
+  },
+  "bugs": {
+    "url": "https://github.com/equinor/opt-ui/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": {
+        "default": "./dist/index.mjs",
+        "types": "./dist/index.d.mts"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:ts": "tsc --noEmit",
+    "clean": "rimraf .turbo dist node_modules",
+    "build": "tsup",
+    "dev": "yarn build --watch"
+  },
+  "peerDependencies": {
+    "@pandacss/dev": ">=0.18"
+  },
+  "dependencies": {
+    "@equinor/eds-tokens": "0.9.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
