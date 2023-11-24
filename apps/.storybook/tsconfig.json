@@ -1,0 +1,13 @@
+{
+  "extends": "@opt-ui/config-tsconfig/tsconfig-storybook.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "node_modules/.cache/.tsbuildinfo",
+    "paths": {
+      "@equinor/opt-ui-core/preset": [
+        "../../packages/opt-ui-core/src/preset.ts"
+      ]
+    }
+  },
+  "include": ["./src", "./config", "panda.config.ts"],
+  "exclude": ["dist", "build", "node_modules"]
+}
