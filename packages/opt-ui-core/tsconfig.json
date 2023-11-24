@@ -1,0 +1,11 @@
+{
+  "extends": "@opt-ui/config-tsconfig/tsconfig-library.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "node_modules/.cache/.tsbuildinfo",
+    "paths": {
+      "@equinor/opt-ui-base": ["../opt-ui-base/src/index.ts"]
+    }
+  },
+  "include": ["./src", "panda.config.ts", "tsup.config.ts"],
+  "exclude": ["dist", "build", "node_modules"]
+}

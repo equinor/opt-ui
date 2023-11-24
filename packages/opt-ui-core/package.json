@@ -1,0 +1,81 @@
+{
+  "private": true,
+  "name": "@equinor/opt-ui-core",
+  "description": "OPT UI - Design system for OPT.",
+  "version": "7.0.0",
+  "license": "MIT",
+  "keywords": [
+    "OPT",
+    "UI",
+    "design-system",
+    "react",
+    "react-components",
+    "react-server-components"
+  ],
+  "author": {
+    "name": "OPT Team",
+    "url": "https://github.com/orgs/equinor/teams/opt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/equinor/opt-ui",
+    "directory": "packages/opt-ui-core"
+  },
+  "bugs": {
+    "url": "https://github.com/equinor/opt-ui/issues"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": {
+        "default": "./dist/index.mjs",
+        "types": "./dist/index.d.mts"
+      }
+    },
+    "./preset": {
+      "source": "./src/preset.ts",
+      "types": "./dist/preset.d.ts",
+      "require": "./dist/preset.js",
+      "import": {
+        "default": "./dist/preset.mjs",
+        "types": "./dist/preset.d.mts"
+      }
+    },
+    "./server": {
+      "source": "./src/server.ts",
+      "types": "./dist/server.d.ts",
+      "require": "./dist/server.js",
+      "import": {
+        "default": "./dist/server.mjs",
+        "types": "./dist/server.d.mts"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "panda codegen --clean",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:ts": "tsc --noEmit",
+    "clean": "rimraf .turbo dist node_modules",
+    "build": "tsup",
+    "dev": "yarn build --watch"
+  },
+  "peerDependencies": {
+    "@pandacss/dev": ">=0.18",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@equinor/opt-ui-base": "workspace:*",
+    "clsx": "2.0.0"
+  }
+}
