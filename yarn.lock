@@ -2067,7 +2067,6 @@ __metadata:
   resolution: "@equinor/opt-ui-core@workspace:packages/opt-ui-core"
   dependencies:
     "@equinor/opt-ui-base": "workspace:*"
-    "@pandacss/dev": "npm:0.18.3"
     clsx: "npm:2.0.0"
   peerDependencies:
     "@pandacss/dev": ">=0.18"
@@ -2953,7 +2952,7 @@ __metadata:
     "@storybook/react": "npm:7.5.3"
     "@storybook/react-webpack5": "npm:7.5.3"
     "@storybook/testing-library": "npm:0.2.2"
-    "@storybook/theming": "npm:7.5.3"
+    "@storybook/theming": "npm:7.6.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     storybook: "npm:7.5.3"
@@ -4503,6 +4502,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/client-logger@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@storybook/client-logger@npm:7.6.0"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+  checksum: 3fe3bb96f58286d9f6fc1f7cbe4fa6459f2bde2e9b7163943d43772377d9a4a896ba24233f2d648b0da33a4fd721127578d416aacd20f3af48eff836766597e6
+  languageName: node
+  linkType: hard
+
 "@storybook/codemod@npm:7.5.3":
   version: 7.5.3
   resolution: "@storybook/codemod@npm:7.5.3"
@@ -5006,6 +5014,21 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 30dc5fd55617fcd7f33a6c75ddd1b2b5e1e28ce2973425fb8764f5770292659e1676264252bd14909ac9843799ab2e0a5d9e83ad3b4a29848c54600264f8af10
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@storybook/theming@npm:7.6.0"
+  dependencies:
+    "@emotion/use-insertion-effect-with-fallbacks": "npm:^1.0.0"
+    "@storybook/client-logger": "npm:7.6.0"
+    "@storybook/global": "npm:^5.0.0"
+    memoizerific: "npm:^1.11.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 612701795aea296309b3d324ac5c412dbb0478cbd45c793d2de30650ab30201c727dd8af650af4abe66b088236d7ac9ef4f60c3351e3242ca5d1293319427981
   languageName: node
   linkType: hard
 
