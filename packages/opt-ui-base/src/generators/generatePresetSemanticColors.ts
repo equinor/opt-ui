@@ -26,5 +26,6 @@ export function generatePresetSemanticColors(
       };
     }
   }
+  // TODO add themes colors
   return defineSemanticTokens.colors(result);
 }

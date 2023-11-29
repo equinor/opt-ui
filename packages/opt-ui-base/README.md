@@ -1,6 +1,6 @@
 # @equinor/opt-ui-base
 
-`@equinor/opt-ui-base` is a Panda CSS preset that simplifies the process of styling user interfaces by offering a collection of utility classes and styles.
+`@equinor/opt-ui-base` is a Panda CSS preset and recipes that simplifies the process of styling components.
 
 ## Installation
 
@@ -26,8 +26,15 @@ import { optUiPreset } from "@equinor/opt-ui-base";
 import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
-  //...
   presets: ["@pandacss/dev/presets", optUiPreset()],
+  preflight: true, // Whether to enable css reset styles.
+  include: [
+    "./node_modules/@equinor/opt-ui-base/**/*.js",
+    "./path/to/your/src/**/*.{ts,tsx}",
+  ],
+  emitPackage: true,
+  outdir: "@equinor/opt-ui-styled-system",
+  jsxFramework: "react",
 });
 ```
 

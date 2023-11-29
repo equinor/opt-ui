@@ -1,7 +1,7 @@
 {
   "name": "@equinor/opt-ui-base",
   "description": "OPT UI - Base style system.",
-  "version": "7.0.0",
+  "version": "6.13.3",
   "license": "MIT",
   "keywords": [
     "OPT",
