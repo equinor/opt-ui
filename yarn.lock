@@ -2067,7 +2067,6 @@ __metadata:
   resolution: "@equinor/opt-ui-core@workspace:packages/opt-ui-core"
   dependencies:
     "@equinor/opt-ui-base": "workspace:*"
-    "@pandacss/dev": "npm:0.18.3"
     clsx: "npm:2.0.0"
   peerDependencies:
     "@pandacss/dev": ">=0.18"
@@ -2942,7 +2941,7 @@ __metadata:
     "@babel/preset-react": "npm:^7.23.3"
     "@babel/preset-typescript": "npm:^7.23.3"
     "@equinor/opt-ui-core": "workspace:*"
-    "@storybook/addon-a11y": "npm:7.5.3"
+    "@storybook/addon-a11y": "npm:7.6.0"
     "@storybook/addon-essentials": "npm:7.5.3"
     "@storybook/addon-interactions": "npm:7.5.3"
     "@storybook/addon-jest": "npm:7.5.3"
@@ -3940,32 +3939,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:7.5.3":
-  version: 7.5.3
-  resolution: "@storybook/addon-a11y@npm:7.5.3"
+"@storybook/addon-a11y@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@storybook/addon-a11y@npm:7.6.0"
   dependencies:
-    "@storybook/addon-highlight": "npm:7.5.3"
-    "@storybook/channels": "npm:7.5.3"
-    "@storybook/client-logger": "npm:7.5.3"
-    "@storybook/components": "npm:7.5.3"
-    "@storybook/core-events": "npm:7.5.3"
-    "@storybook/global": "npm:^5.0.0"
-    "@storybook/manager-api": "npm:7.5.3"
-    "@storybook/preview-api": "npm:7.5.3"
-    "@storybook/theming": "npm:7.5.3"
-    "@storybook/types": "npm:7.5.3"
+    "@storybook/addon-highlight": "npm:7.6.0"
     axe-core: "npm:^4.2.0"
-    lodash: "npm:^4.17.21"
-    react-resize-detector: "npm:^7.1.2"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 62b7bb256bbd2c9f63ee8701d070543231e5e0ecd599bdd4982edc762357b9d02d630cc7f47d91de4e24bdb6810a79b90a05aaea99cc23ffe74e67b1dbdc6d1b
+  checksum: 3f28c0dbc41a26da6599e825694367bd77c18b84af5a548b31045724c0dec4db0b2891a7fab875eaf52f832a7b82751ff1689a95950fec4747c36e038550246c
   languageName: node
   linkType: hard
 
@@ -4118,6 +4098,15 @@ __metadata:
     "@storybook/global": "npm:^5.0.0"
     "@storybook/preview-api": "npm:7.5.3"
   checksum: d0d8665682bcbc4241489e75695dba4fa831803ddbe17c0936dc7a1e1981237f8698b6b228031594def37a2df9a7ce217afc279aa4f3af052c67c2579972bf70
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@storybook/addon-highlight@npm:7.6.0"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+  checksum: a17dd60ec53d22eb0774b21f3522a8fa308d7019f59df5ba634b404964dd87d49012a22a1720f0598e0931a72116a785f7538ced7c9c7eb43d4dc442dfe02b48
   languageName: node
   linkType: hard
 
