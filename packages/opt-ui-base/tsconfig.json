@@ -1,8 +1,8 @@
 {
   "extends": "@opt-ui/config-tsconfig/tsconfig-library.json",
   "compilerOptions": {
-    "tsBuildInfoFile": "node_modules/.cache/.tsbuildinfo"
+    "tsBuildInfoFile": "tsconfig.tsbuildinfo"
   },
-  "include": ["./src", "tsup.config.ts"],
+  "include": ["./src", "./index.ts", "./recipes.ts", "tsup.config.ts"],
   "exclude": ["dist", "build", "node_modules"]
 }

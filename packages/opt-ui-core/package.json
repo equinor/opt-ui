@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@equinor/opt-ui-core",
   "description": "OPT UI - Design system for OPT.",
   "version": "7.0.0",
@@ -37,22 +36,22 @@
         "types": "./dist/index.d.mts"
       }
     },
-    "./preset": {
-      "source": "./src/preset.ts",
-      "types": "./dist/preset.d.ts",
-      "require": "./dist/preset.js",
+    "./server-components": {
+      "source": "./src/server-components.ts",
+      "types": "./dist/server-components.d.ts",
+      "require": "./dist/server-components.js",
       "import": {
-        "default": "./dist/preset.mjs",
-        "types": "./dist/preset.d.mts"
+        "default": "./dist/server-components.mjs",
+        "types": "./dist/server-components.d.mts"
       }
     },
-    "./server": {
-      "source": "./src/server.ts",
-      "types": "./dist/server.d.ts",
-      "require": "./dist/server.js",
+    "./style-system": {
+      "source": "./src/style-system.ts",
+      "types": "./dist/style-system.d.ts",
+      "require": "./dist/style-system.js",
       "import": {
-        "default": "./dist/server.mjs",
-        "types": "./dist/server.d.mts"
+        "default": "./dist/style-system.mjs",
+        "types": "./dist/style-system.d.mts"
       }
     },
     "./package.json": "./package.json"
@@ -62,20 +61,22 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "prepare": "panda codegen --clean",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:ts": "tsc --noEmit",
-    "clean": "rimraf .turbo dist node_modules",
+    "clean": "rimraf .turbo dist tsconfig.tsbuildinfo",
     "build": "tsup",
     "dev": "yarn build --watch"
   },
   "peerDependencies": {
+    "@equinor/opt-ui-styled-system": "*",
     "@pandacss/dev": ">=0.18",
     "react": ">=18",
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@equinor/opt-ui-base": "workspace:*",
-    "clsx": "2.0.0"
+    "@equinor/opt-ui-base": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

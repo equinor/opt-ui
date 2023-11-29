@@ -1,10 +1,9 @@
 import { definePreset } from "@pandacss/dev";
-import { buttonRecipe } from "./components/button";
+import { generatePresetColors } from "./generators/generatePresetColors";
+import { generatePresetConditions } from "./generators/generatePresetConditions";
+import { generatePresetSemanticColors } from "./generators/generatePresetSemanticColors";
+import { generatePresetTextStyles } from "./generators/generatePresetTextStyles";
 import type { OptUiPresetOptions } from "./types";
-import { generatePresetColors } from "./utils/generatePresetColors";
-import { generatePresetConditions } from "./utils/generatePresetConditions";
-import { generatePresetSemanticColors } from "./utils/generatePresetSemanticColors";
-import { generatePresetTextStyles } from "./utils/generatePresetTextStyles";
 
 /**
  * Panda css preset.
@@ -32,13 +31,10 @@ export function optUiPreset(options?: OptUiPresetOptions) {
           colors: generatePresetSemanticColors(themes),
         },
         textStyles: generatePresetTextStyles(),
-        recipes: {
-          button: buttonRecipe,
-        },
       },
     },
   });
 }
 
-// Export types
-export type * from "./types";
+// Export type
+export type { OptUiPresetOptions } from "./types";

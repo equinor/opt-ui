@@ -1,13 +1,22 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["./src/index.ts", "./src/server.ts", "./src/preset.ts"],
+  entry: [
+    "./src/index.ts",
+    "./src/server-components.ts",
+    "./src/style-system.ts",
+  ],
   format: ["esm", "cjs"],
   treeshake: true,
   splitting: true,
   dts: true,
   minify: true,
   clean: true,
-  external: ["react", "@pandacss/dev", "@equinor/opt-ui-styled-system"],
+  external: [
+    "@pandacss/dev",
+    "@equinor/opt-ui-styled-system",
+    "react",
+    "react-dom",
+  ],
   onSuccess: "node ./tasks/post-build.mjs",
 });

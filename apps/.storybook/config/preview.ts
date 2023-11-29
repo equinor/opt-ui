@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import "./panda.css";
 
 export const preview: Preview = {
   decorators: [],

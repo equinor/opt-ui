@@ -31,7 +31,6 @@
       ]
     },
     "test": {
-      "dependsOn": ["^build"],
       "dotEnv": [".env.test.local", ".env.test", ".env"]
     },
     "clean": {

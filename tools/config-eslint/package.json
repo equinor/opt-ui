@@ -5,11 +5,14 @@
   "main": "index.js",
   "files": [
     "./library.js",
-    "./nextjs.js"
+    "./nextjs.js",
+    "./storybook.js"
   ],
   "dependencies": {
     "@next/eslint-plugin-next": "14.0.3",
     "@vercel/style-guide": "5.1.0",
-    "eslint-config-turbo": "1.10.16"
+    "eslint-config-turbo": "1.10.16",
+    "eslint-plugin-mdx": "2.2.0",
+    "eslint-plugin-storybook": "0.6.15"
   }
 }

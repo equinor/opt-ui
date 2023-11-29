@@ -2,11 +2,11 @@
   "private": true,
   "name": "@opt-ui/storybook",
   "version": "7.0.0",
+  "type": "module",
   "scripts": {
-    "prepare": "panda codegen  --clean",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:ts": "tsc --noEmit",
-    "clean": "rimraf .turbo dist node_modules storybook-static",
+    "clean": "rimraf .turbo dist storybook-static tsconfig.tsbuildinfo",
     "dev": "storybook dev -p 6006 --config-dir ./config --quiet",
     "build": "storybook build --config-dir ./config --quiet"
   },
@@ -16,21 +16,19 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.23.3",
-    "@babel/preset-react": "^7.23.3",
-    "@babel/preset-typescript": "^7.23.3",
-    "@storybook/addon-a11y": "7.5.3",
-    "@storybook/addon-essentials": "7.5.3",
-    "@storybook/addon-interactions": "7.5.3",
-    "@storybook/addon-jest": "7.5.3",
-    "@storybook/addon-links": "7.5.3",
-    "@storybook/addon-storysource": "7.5.3",
-    "@storybook/blocks": "7.5.3",
-    "@storybook/manager-api": "7.5.3",
-    "@storybook/react": "7.5.3",
-    "@storybook/react-webpack5": "7.5.3",
+    "@storybook/addon-a11y": "7.6.1",
+    "@storybook/addon-essentials": "7.6.1",
+    "@storybook/addon-interactions": "7.6.1",
+    "@storybook/addon-jest": "7.6.1",
+    "@storybook/addon-links": "7.6.1",
+    "@storybook/addon-storysource": "7.6.1",
+    "@storybook/blocks": "7.6.1",
+    "@storybook/manager-api": "7.6.1",
+    "@storybook/react": "7.6.1",
+    "@storybook/react-vite": "7.6.1",
     "@storybook/testing-library": "0.2.2",
-    "@storybook/theming": "7.5.3",
-    "storybook": "7.5.3"
+    "@storybook/theming": "7.6.1",
+    "storybook": "7.6.1",
+    "vite": "5.0.4"
   }
 }

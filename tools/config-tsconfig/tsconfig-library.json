@@ -8,6 +8,6 @@
     "allowJs": false,
     "incremental": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "react-jsx"
   }
 }

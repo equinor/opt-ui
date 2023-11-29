@@ -3,20 +3,25 @@ const { resolve } = require("node:path");
 const project = resolve(process.cwd(), "tsconfig.json");
 
 /*
- * This is a custom ESLint configuration for use with internal libraries that utilize React.
+ * This is a custom ESLint configuration for use with storybook apps.
  */
 module.exports = {
   extends: [
-    "@vercel/style-guide/eslint/node",
-    "@vercel/style-guide/eslint/typescript",
-    "@vercel/style-guide/eslint/browser",
-    "@vercel/style-guide/eslint/react",
-    "eslint-config-turbo",
-  ].map(require.resolve),
+    "plugin:storybook/recommended",
+    "plugin:mdx/recommended",
+    ...[
+      "@vercel/style-guide/eslint/node",
+      "@vercel/style-guide/eslint/typescript",
+      "@vercel/style-guide/eslint/browser",
+      "@vercel/style-guide/eslint/react",
+      "eslint-config-turbo",
+    ].map(require.resolve),
+  ],
   parserOptions: {
     project,
   },
   globals: {
+    React: true,
     JSX: true,
   },
   settings: {
@@ -26,7 +31,7 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: ["node_modules/", "dist/", ".eslintrc.js", "**/*.css"],
+  ignorePatterns: ["node_modules/", "dist/", ".eslintrc.js"],
   rules: {
     // Base rules for OPT
     "unicorn/filename-case": [
@@ -41,10 +46,10 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/no-empty-interface": "off",
-    "@typescript-eslint/naming-convention": [
-      "error",
-      { selector: ["enumMember"], format: ["UPPER_CASE"] },
-    ],
+    // "@typescript-eslint/naming-convention": [
+    //   "error",
+    //   { selector: ["enumMember"], format: ["UPPER_CASE"] },
+    // ],
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-unsafe-enum-comparison": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",

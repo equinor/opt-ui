@@ -30,9 +30,9 @@ export const lightPallette: ColorPallette = {
     highlight: tokens.colors.interactive.warning__highlight.hex,
   },
   danger: {
-    main: tokens.colors.interactive.warning__resting.hex,
-    hover: tokens.colors.interactive.warning__hover.hex,
-    highlight: tokens.colors.interactive.warning__highlight.hex,
+    main: tokens.colors.interactive.danger__resting.hex,
+    hover: tokens.colors.interactive.danger__hover.hex,
+    highlight: tokens.colors.interactive.danger__highlight.hex,
   },
   disabled: {
     fill: tokens.colors.interactive.disabled__fill.hex,
@@ -55,8 +55,8 @@ export const lightPallette: ColorPallette = {
     nav: "#FFFFFF",
     paper: "#FFFFFF",
     popover: "#FFFFFF",
-    overlay: "rgba(0,0,0,0.8)",
-    lighten: "#F7F7F7",
+    overlay: tokens.colors.ui.background__overlay.rgba,
+    lighten: tokens.colors.ui.background__light.hex,
   },
   table: {
     header: tokens.colors.interactive.table__header__fill_resting.hex,

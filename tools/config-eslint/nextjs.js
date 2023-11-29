@@ -28,7 +28,7 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: ["node_modules/", "dist/"],
+  ignorePatterns: ["node_modules/", "dist/", ".eslintrc.js"],
   rules: {
     // Base rules for OPT
     "unicorn/filename-case": [
@@ -59,10 +59,10 @@ module.exports = {
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/no-non-null-assertion": "warn",
     "@typescript-eslint/no-invalid-void-type": "off", // Fix for api builder.query or builder.mutation return void type parameter
-    // Nextjs fixes
-    "import/no-unresolved": ["error", { ignore: [".svg"] }], // Fix import svg files for typescript
     // React fixes
     "react/hook-use-state": "off",
     "react/jsx-no-leaked-render": "off",
+    // Nextjs fixes
+    "import/no-unresolved": ["error", { ignore: [".svg"] }], // Fix import svg files for typescript
   },
 };

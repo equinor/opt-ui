@@ -9,6 +9,6 @@
     "incremental": true,
     "noEmit": true,
     "resolveJsonModule": true,
-    "jsx": "preserve"
+    "jsx": "react-jsx"
   }
 }

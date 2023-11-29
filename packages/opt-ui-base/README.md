@@ -67,6 +67,8 @@ export default defineConfig({
 });
 ```
 
+> A theme MUST define all the color's pallette
+
 #### Apply the theme within a color mode
 
 ```jsx
@@ -77,11 +79,11 @@ export default defineConfig({
 </html>
 ```
 
-> If no `data-color-mode` is provided it will use light mode by default.
+> If no `data-color-mode` is provided it will use light mode by default, and `data-color-mode="light|dark"` can be placed in any html node and it will prevail the last one defined.
 
 ## 📚 Documentation
 
-For complete usages, please dive into our the [docs]().
+For complete usages, please dive into our the [docs](https://...).
 
 ## License
 

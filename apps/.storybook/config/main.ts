@@ -1,8 +1,12 @@
-import type { StorybookConfig } from "@storybook/react-webpack5";
+import type { StorybookConfig } from "@storybook/react-vite";
 
 // Storybook configuration
 const config: StorybookConfig = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  stories: [
+    "../src/**/*.mdx",
+    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../../../packages/**/src/**/*.stories.@(ts|tsx)",
+  ],
   addons: [
     "@storybook/addon-storysource",
     "@storybook/addon-a11y",
@@ -12,7 +16,7 @@ const config: StorybookConfig = {
     "@storybook/addon-jest",
   ],
   framework: {
-    name: "@storybook/react-webpack5",
+    name: "@storybook/react-vite",
     options: {},
   },
   core: {
@@ -23,7 +27,7 @@ const config: StorybookConfig = {
   },
   typescript: {
     check: true,
-    reactDocgen: "react-docgen-typescript",
+    reactDocgen: false, // ! vite does not work with "react-docgen-typescript" atm
   },
   staticDirs: ["./static"],
 };
