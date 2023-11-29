@@ -40,7 +40,7 @@
     "@opt-ui/config-tsconfig": "workspace:*",
     "@opt-ui/eslint-config-opt": "workspace:*",
     "@pandacss/dev": "0.18.3",
-    "@types/react": "18.2.38",
+    "@types/react": "18.2.39",
     "@types/react-dom": "18.2.17",
     "eslint": "8.54.0",
     "husky": "8.0.3",
