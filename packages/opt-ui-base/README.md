@@ -1,6 +1,6 @@
 # @equinor/opt-ui-base
 
-`@equinor/opt-ui-base` is a Panda CSS preset and recipes that simplifies the process of styling components.
+`@equinor/opt-ui-base` is a framework agnostic utility library based on Panda CSS which offers a preset and recipes that simplifies the process of styling components.
 
 ## Installation
 
@@ -34,7 +34,6 @@ export default defineConfig({
   ],
   emitPackage: true,
   outdir: "@equinor/opt-ui-styled-system",
-  jsxFramework: "react",
 });
 ```
 
@@ -86,11 +85,28 @@ export default defineConfig({
 </html>
 ```
 
-> If no `data-color-mode` is provided it will use light mode by default, and `data-color-mode="light|dark"` can be placed in any html node and it will prevail the last one defined.
+> If no `data-color-mode` is provided it will use light mode by default.
+
+You can place the `data-` theme attributes anywhere, is not restricted to the html node, it will use the last one defined.
+
+```jsx
+<html data-color-mode="dark">
+  <body>
+    <p className={css({ color: "primary.main" })}>
+      Text with color primary main using the default theme and dark mode.
+    </p>
+    <div data-theme="pink" data-color-mode="light">
+      <p className={css({ color: "primary.main" })}>
+        Text with color primary main using the pink theme and light mode.
+      </p>
+    </div>
+  </body>
+</html>
+```
 
 ## 📚 Documentation
 
-For complete usages, please dive into our the [docs](https://...).
+For complete usages, please dive into our the [docs](TODO).
 
 ## License
 
