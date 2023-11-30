@@ -31,7 +31,7 @@
     "@storybook/react": "7.6.1",
     "@storybook/react-vite": "7.6.1",
     "@storybook/testing-library": "0.2.2",
-    "@storybook/theming": "7.6.1",
+    "@storybook/theming": "7.6.2",
     "storybook": "7.6.1",
     "vite": "5.0.4"
   }
