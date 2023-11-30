@@ -2915,7 +2915,7 @@ __metadata:
   resolution: "@opt-ui/storybook@workspace:apps/.storybook"
   dependencies:
     "@equinor/opt-ui-core": "workspace:*"
-    "@storybook/addon-a11y": "npm:7.6.1"
+    "@storybook/addon-a11y": "npm:7.6.2"
     "@storybook/addon-essentials": "npm:7.6.1"
     "@storybook/addon-interactions": "npm:7.6.1"
     "@storybook/addon-jest": "npm:7.6.1"
@@ -3873,13 +3873,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:7.6.1":
-  version: 7.6.1
-  resolution: "@storybook/addon-a11y@npm:7.6.1"
+"@storybook/addon-a11y@npm:7.6.2":
+  version: 7.6.2
+  resolution: "@storybook/addon-a11y@npm:7.6.2"
   dependencies:
-    "@storybook/addon-highlight": "npm:7.6.1"
+    "@storybook/addon-highlight": "npm:7.6.2"
     axe-core: "npm:^4.2.0"
-  checksum: 0820c260842ac23c15f476baedfb7a5312ed30037460a7d3f8bac287198899e31160b966724a8cb0872b61b8d77d1e831c13fb5c200f2005af083ca01d029d12
+  checksum: 6e161281e50b6a7a1274fd7c6f1b08517a3e23773adc7f84a244afa7381617dd8b1ac5e3fc5f08a30cab4e8d36edcdb89536156310b165d9bc6b288ee673f6ba
   languageName: node
   linkType: hard
 
@@ -3980,6 +3980,15 @@ __metadata:
   dependencies:
     "@storybook/global": "npm:^5.0.0"
   checksum: acecfa00e685ef01caa0d5bb055b6bcf0a23ffba07588f93ade189dffe362f2cdd641d42f5b5b6c70077d3b310a0d268f0104741bc39ca454ce5a30de82f142f
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:7.6.2":
+  version: 7.6.2
+  resolution: "@storybook/addon-highlight@npm:7.6.2"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+  checksum: 6dbe1e9748cd648eb052addeaab8eed08e3ba214f47903a3b335fdf69fb63d708f17274c6d12ffa718172552becdc1aed018cc39bbce058510032b5feb4ea71f
   languageName: node
   linkType: hard
 
