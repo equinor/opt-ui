@@ -10,6 +10,9 @@
     "dev": "storybook dev -p 6006 --config-dir ./config --quiet",
     "build": "storybook build --config-dir ./config --quiet"
   },
+  "peerDependencies": {
+    "@equinor/opt-ui-styled-system": "*"
+  },
   "dependencies": {
     "@equinor/opt-ui-core": "workspace:*",
     "react": "18.2.0",
@@ -23,6 +26,7 @@
     "@storybook/addon-links": "7.6.1",
     "@storybook/addon-storysource": "7.6.1",
     "@storybook/blocks": "7.6.1",
+    "@storybook/builder-vite": "7.6.1",
     "@storybook/manager-api": "7.6.1",
     "@storybook/react": "7.6.1",
     "@storybook/react-vite": "7.6.1",
