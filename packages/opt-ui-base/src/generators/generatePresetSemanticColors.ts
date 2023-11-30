@@ -20,12 +20,22 @@ export function generatePresetSemanticColors(
       // @ts-expect-error -- Difficult at this level to create a type safe
       result[colorKey][colorTypeKey] = {
         value: {
-          base: color,
-          _dark: darkPallette[colorKey as never][colorTypeKey as never],
+          _equinorTheme: {
+            base: color,
+            _dark: darkPallette[colorKey as never][colorTypeKey as never],
+          },
         },
       };
+      themes.forEach((theme) => {
+        // @ts-expect-error -- Difficult at this level to create a type safe
+        const themeColor = theme.colors[colorKey]?.[colorTypeKey]?.value;
+        if (themeColor) {
+          // @ts-expect-error -- Difficult at this level to create a type safe
+          result[colorKey][colorTypeKey].value[`_${theme.name}Theme`] =
+            themeColor;
+        }
+      });
     }
   }
-  // TODO add themes colors
   return defineSemanticTokens.colors(result);
 }

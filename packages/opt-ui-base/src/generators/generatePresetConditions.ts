@@ -13,9 +13,10 @@ export function generatePresetConditions(
   const conditions: Preset["conditions"] = {
     light: "[data-color-mode=light] &",
     dark: "[data-color-mode=dark] &",
+    equinorTheme: "[data-theme=equinor] &",
   };
   for (const theme of themes) {
-    conditions[theme.name] = `[data-theme=${theme.name}] &]`;
+    conditions[`${theme.name}Theme`] = `[data-theme=${theme.name}] &`;
   }
   return conditions;
 }

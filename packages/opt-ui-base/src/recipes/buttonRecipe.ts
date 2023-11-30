@@ -9,6 +9,7 @@ export const buttonRecipe = sva({
     root: {
       position: "relative",
       textStyle: "bodyShort",
+      fontSize: "0.875rem",
       fontWeight: 500,
       display: "inline-flex",
       alignItems: "center",
@@ -119,6 +120,7 @@ export const buttonRecipe = sva({
         root: {
           minWidth: "24px",
           minHeight: "24px",
+          py: "2px",
         },
         adornment: {
           width: "16px",
@@ -151,7 +153,6 @@ export const buttonRecipe = sva({
           color: "text.disabled !important",
         },
       },
-      false: {},
     },
   },
   compoundVariants: [

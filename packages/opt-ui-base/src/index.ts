@@ -33,8 +33,20 @@ export function optUiPreset(options?: OptUiPresetOptions) {
         textStyles: generatePresetTextStyles(),
       },
     },
+    globalCss: {
+      extend: {
+        "html, body, #app, .app": {
+          backgroundColor: "var(--colors-background-main)",
+          color: "var(--colors-text-primary)",
+        },
+      },
+    },
   });
 }
 
-// Export type
-export type { OptUiPresetOptions } from "./types";
+// Export light/dark pallette
+export * from "./pallette/darkPallette";
+export * from "./pallette/lightPallette";
+
+// Export types
+export * from "./types";
