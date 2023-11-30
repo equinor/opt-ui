@@ -1,6 +1,6 @@
 # @equinor/opt-ui-base
 
-`@equinor/opt-ui-base` is a framework agnostic utility library based on Panda CSS which offers a preset, recipes and multi theme support that simplifies the process of styling components.
+`@equinor/opt-ui-base` is a framework agnostic utility library based on [Panda CSS](https://panda-css.com/) which offers a preset, recipes and multi theme support that simplifies the process of styling components.
 
 ## Installation
 
