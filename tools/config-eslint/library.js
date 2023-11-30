@@ -59,5 +59,6 @@ module.exports = {
     // React fixes
     "react/hook-use-state": "off",
     "react/jsx-no-leaked-render": "off",
+    "react/no-array-index-key": "off",
   },
 };
