@@ -18,7 +18,7 @@ yarn add -D @equinor/opt-ui-base
 
 ## Configuration
 
-Configure Panda CSS in your project by creating a `panda.config.js` file and importing the `optUiPreset` from `@equinor/opt-ui-base`.
+Configure Panda CSS in your project by creating a `panda.config.ts` file and importing the `optUiPreset` from `@equinor/opt-ui-base`.
 
 ```ts
 // panda.config.ts
@@ -32,18 +32,19 @@ export default defineConfig({
     "./node_modules/@equinor/opt-ui-base/**/*.js",
     "./path/to/your/src/**/*.{ts,tsx}",
   ],
-  emitPackage: true, // Need it if you plan to use our recipes
-  outdir: "@equinor/opt-ui-styled-system", // Need it if you plan to use our recipes
+  emitPackage: true,
+  outdir: "@equinor/opt-ui-styled-system",
 });
 ```
 
-If you plan to use our recipes you must set up `emitPackage` and `outdir`, and then any import of the style system will be:
+When `emitPackage` and `outdir` are configured, the code artifacts will be emitted to the `node_modules`. Going forward, you'll now import the style system functions from the `@equinor/opt-ui-styled-system` package.
 
-```ts
+```js
+// Example of importing the css utility from the style-system package
 import { css } from "@equinor/opt-ui-styled-system/css";
 ```
 
-To enable autocomplete on you IDE you can add `"@equinor/opt-ui-styled-system` as a `peerDependency` on your `package.json`
+To enable autocomplete on you IDE you can add `@equinor/opt-ui-styled-system` as a `peerDependency` on your `package.json`
 
 ```json
 "peerDependencies": {
@@ -51,7 +52,7 @@ To enable autocomplete on you IDE you can add `"@equinor/opt-ui-styled-system` a
 }
 ```
 
-> Remember to include the `panda codegen` script, as explained in the Panda CSS documentation, in your `package.json`. This ensures that the `prepare` script will generate `@equinor/opt-ui-styled-system` when installing the node_modules.
+> Remember to include the `panda codegen` script, as explained in the [Panda CSS documentation](https://panda-css.com/docs/installation/postcss#update-packagejson-scripts), in your `package.json`. This ensures that the `prepare` script will generate `@equinor/opt-ui-styled-system` when installing the node_modules.
 
 ## Usage
 
