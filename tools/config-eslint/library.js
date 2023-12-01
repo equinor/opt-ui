@@ -11,6 +11,8 @@ module.exports = {
     "@vercel/style-guide/eslint/typescript",
     "@vercel/style-guide/eslint/browser",
     "@vercel/style-guide/eslint/react",
+    "@vercel/style-guide/eslint/jest",
+    "@vercel/style-guide/eslint/jest-react",
     "eslint-config-turbo",
   ].map(require.resolve),
   parserOptions: {
@@ -60,5 +62,7 @@ module.exports = {
     "react/hook-use-state": "off",
     "react/jsx-no-leaked-render": "off",
     "react/no-array-index-key": "off",
+    // Jest fixes
+    "jest/prefer-lowercase-title": "off",
   },
 };
