@@ -3129,7 +3129,7 @@ __metadata:
     "@storybook/addon-interactions": "npm:7.6.1"
     "@storybook/addon-jest": "npm:7.6.1"
     "@storybook/addon-links": "npm:7.6.1"
-    "@storybook/addon-storysource": "npm:7.6.1"
+    "@storybook/addon-storysource": "npm:7.6.3"
     "@storybook/blocks": "npm:7.6.1"
     "@storybook/builder-vite": "npm:7.6.1"
     "@storybook/manager-api": "npm:7.6.1"
@@ -4271,13 +4271,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-storysource@npm:7.6.1":
-  version: 7.6.1
-  resolution: "@storybook/addon-storysource@npm:7.6.1"
+"@storybook/addon-storysource@npm:7.6.3":
+  version: 7.6.3
+  resolution: "@storybook/addon-storysource@npm:7.6.3"
   dependencies:
     estraverse: "npm:^5.2.0"
     tiny-invariant: "npm:^1.3.1"
-  checksum: ea53596c84a00aa7b60309f97117cb4f0ae2ed1af334d418946ab85faa9fcd9e551e82c4f00b63bd064645d5d2b75b18187b6bb381d1765d6d0c45a1d379063b
+  checksum: d0e23c1d2834d1d7d2b3e54696bdbf2f0eebc769428ce7ec46edbac2b7d97ee5329fcbd0e38990b9b958fdccefdc3a25653651bef71700eae92a1fb62cc7bd3c
   languageName: node
   linkType: hard
 
