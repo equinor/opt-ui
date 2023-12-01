@@ -11,7 +11,7 @@ import type { OptUiPresetOptions, ThemeColors } from "../types";
  */
 export function generatePresetSemanticColors(
   themes: NonNullable<OptUiPresetOptions["themes"]>
-): SemanticTokens["colors"] {
+): NonNullable<SemanticTokens["colors"]> {
   const result = {} as ThemeColors;
   for (const [colorKey, colorKeyValues] of Object.entries(lightPallette)) {
     // @ts-expect-error -- Difficult at this level to create a type safe
@@ -33,6 +33,10 @@ export function generatePresetSemanticColors(
           // @ts-expect-error -- Difficult at this level to create a type safe
           result[colorKey][colorTypeKey].value[`_${theme.name}Theme`] =
             themeColor;
+        } else {
+          throw new Error(
+            `Missing color property {${colorKey}.${colorTypeKey}} on theme ${theme.name}`
+          );
         }
       });
     }

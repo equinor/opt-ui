@@ -9,7 +9,7 @@ import type { OptUiPresetOptions } from "../types";
  */
 export function generatePresetConditions(
   themes: NonNullable<OptUiPresetOptions["themes"]>
-): Preset["conditions"] {
+): NonNullable<Preset["conditions"]> {
   const conditions: Preset["conditions"] = {
     light: "[data-color-mode=light] &",
     dark: "[data-color-mode=dark] &",

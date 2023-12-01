@@ -3,6 +3,12 @@
   "compilerOptions": {
     "tsBuildInfoFile": "tsconfig.tsbuildinfo"
   },
-  "include": ["./src", "./index.ts", "./recipes.ts", "tsup.config.ts"],
+  "include": [
+    "./src",
+    "./tests",
+    "./index.ts",
+    "./recipes.ts",
+    "tsup.config.ts"
+  ],
   "exclude": ["dist", "build", "node_modules"]
 }

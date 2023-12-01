@@ -54,7 +54,8 @@
     "lint:ts": "tsc --noEmit",
     "clean": "rimraf .turbo dist tsconfig.tsbuildinfo",
     "build": "tsup",
-    "dev": "yarn build --watch"
+    "dev": "yarn build --watch",
+    "test": "jest"
   },
   "peerDependencies": {
     "@equinor/opt-ui-styled-system": "*",
