@@ -29,7 +29,7 @@
     "lint:ts": "turbo run lint:ts",
     "format": "prettier --ignore-path .gitignore --check .",
     "format:all": "prettier --ignore-path .gitignore --write .",
-    "clean": "turbo daemon clean && turbo run clean && rimraf .turbo",
+    "clean": "turbo daemon clean && turbo run clean && rimraf .turbo coverage",
     "dev": "turbo run dev",
     "build": "turbo run build",
     "test": "turbo run test",
