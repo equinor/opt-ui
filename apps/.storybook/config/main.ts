@@ -5,10 +5,9 @@ const config: StorybookConfig = {
   stories: [
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
-    "../../../packages/**/src/**/*.stories.@(ts|tsx)",
+    "../../../packages/**/stories/**/*.@(stories|story).@(ts|tsx)",
   ],
   addons: [
-    "@storybook/addon-storysource",
     "@storybook/addon-a11y",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -28,7 +27,12 @@ const config: StorybookConfig = {
   },
   typescript: {
     check: true,
-    reactDocgen: false, // ! vite does not work with "react-docgen-typescript" atm
+    reactDocgen: "react-docgen-typescript",
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      // shouldExtractValuesFromUnion: true,
+      include: ["../../packages/opt-ui-core/**/**.tsx"],
+    },
   },
   staticDirs: ["./static"],
 };

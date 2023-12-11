@@ -18,5 +18,5 @@ export default defineConfig({
     "react",
     "react-dom",
   ],
-  onSuccess: "node ./tasks/post-build.mjs",
+  onSuccess: "node ./scripts/post-build.mjs",
 });

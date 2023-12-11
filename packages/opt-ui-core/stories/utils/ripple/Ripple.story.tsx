@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Ripple from "../Ripple";
+import { Ripple } from "../../../src";
 
 // Prop types
 type Story = StoryObj<typeof Ripple>;

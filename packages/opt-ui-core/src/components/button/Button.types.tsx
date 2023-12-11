@@ -1,28 +1,24 @@
 import type { ButtonRecipeProps } from "@equinor/opt-ui-base/recipes";
 import type { HTMLStyledProps } from "@equinor/opt-ui-styled-system/types";
-import type { ElementType, ReactNode } from "react";
+import type { ReactNode } from "react";
 
-// Add target and rel to the button html attributes
-interface ButtonBaseHTMLAttributes {
-  target?: string;
-  rel?: string;
-}
-
-// Button prop types
+// Define base button props which extends from the button recipe props.
 export interface ButtonProps
-  extends ButtonBaseHTMLAttributes,
-    HTMLStyledProps<"button">,
+  extends HTMLStyledProps<"button">,
     ButtonRecipeProps {
   /**
-   * The component used for the root node.
-   * @defaultValue "button"
+   * The content of the component.
    */
-  as?: ElementType;
+  children?: ReactNode;
   /**
-   * The URL to link to when the button is clicked. If defined, an `<a>` element will be used as the root node.
-   * @defaultValue undefined
+   * The className of the component.
    */
-  href?: string;
+  className?: string;
+  /**
+   * If `true`, the button will be disabled.
+   * @defaultValue false
+   */
+  disabled?: boolean;
   /**
    * Element placed before the children.
    * @defaultValue undefined
@@ -35,14 +31,9 @@ export interface ButtonProps
   endIcon?: ReactNode;
   /**
    * The size of the icon.
-   * @defaultValue undefined
+   * @defaultValue 18
    */
   iconSize?: number;
-  /**
-   * If the button is in a loading state.
-   * @defaultValue false
-   */
-  loading?: boolean;
   /**
    * If `true`, the ripple effect will be disabled.
    * @defaultValue false

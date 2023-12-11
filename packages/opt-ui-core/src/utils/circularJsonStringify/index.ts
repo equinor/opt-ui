@@ -1,5 +1,5 @@
 /**
- * @returns a JSON.stringify replacer function that controls the circular dependencies.
+ * @returns a JSON.stringify replacer function that controls the cyclic references.
  */
 function getCircularReplacer() {
   const seen = new WeakSet();
@@ -13,10 +13,10 @@ function getCircularReplacer() {
 }
 
 /**
- * Serialize an Object to string with circular references.
+ * Serialize an Object to string removing cyclic references.
  *
  * @param object - The object to serialize.
- * @returns a json stringify with circular dependencies.
+ * @returns a json stringify function that removes cyclic references.
  */
 export function circularJsonStringify(object: object) {
   return JSON.stringify(object, getCircularReplacer());

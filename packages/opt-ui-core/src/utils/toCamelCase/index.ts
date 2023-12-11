@@ -1,13 +1,19 @@
+import { toKebabCase } from "../toKebabCase";
+
 /**
- * Transform a string in kebab-case or PascalCase or snake_case into camelCase.
+ * Transform a string into camelCase format.
  *
  * @param str - The input string to format.
  * @returns the string in camelCase.
  */
 export function toCamelCase(str: string) {
-  return str
-    .toLowerCase()
-    .replace(/(?<temp1>[-_][a-z0-9])/gi, ($1) =>
-      $1.toUpperCase().replace("-", "").replace("_", "")
-    );
+  return toKebabCase(str)
+    .replace(/[-_ ]+/g, " ")
+    .split(" ")
+    .map((word, index) =>
+      index === 0
+        ? word.toLowerCase()
+        : word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+    )
+    .join("");
 }

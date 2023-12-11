@@ -8,11 +8,12 @@ export const buttonRecipe = sva({
   base: {
     root: {
       position: "relative",
-      textStyle: "bodyShort",
+      textStyle: "bodyLong",
       fontSize: "0.875rem",
       fontWeight: 500,
       display: "inline-flex",
       alignItems: "center",
+      gap: "8px",
       minWidth: "36px",
       minHeight: "36px",
       width: "fit-content",
@@ -45,21 +46,19 @@ export const buttonRecipe = sva({
         width: "18px",
         height: "18px",
       },
-      _first: {
-        marginRight: "8px",
-      },
-      _last: {
-        marginLeft: "8px",
-      },
     },
   },
   variants: {
+    /**
+     * The variant of the button to use.
+     */
     variant: {
       contained: {
         root: {
           _disabled: {
-            borderColor: "disabled.border !important",
-            backgroundColor: "disabled.fill !important",
+            color: "text.disabled",
+            borderColor: "disabled.border",
+            backgroundColor: "disabled.fill",
           },
         },
       },
@@ -68,8 +67,9 @@ export const buttonRecipe = sva({
           backgroundColor: "transparent",
           boxShadow: "none",
           _disabled: {
-            borderColor: "disabled.border !important",
-            backgroundColor: "transparent !important",
+            color: "text.disabled",
+            borderColor: "disabled.border",
+            backgroundColor: "transparent",
           },
         },
       },
@@ -79,12 +79,16 @@ export const buttonRecipe = sva({
           backgroundColor: "transparent",
           boxShadow: "none",
           _disabled: {
-            borderColor: "transparent !important",
-            backgroundColor: "transparent !important",
+            color: "text.disabled",
+            borderColor: "transparent",
+            backgroundColor: "transparent",
           },
         },
       },
     },
+    /**
+     * The variant color of the component.
+     */
     variantColor: {
       primary: {
         root: { _focusVisible: { outlineColor: "primary.main" } },
@@ -105,6 +109,11 @@ export const buttonRecipe = sva({
         root: { _focusVisible: { outlineColor: "danger.main" } },
       },
     },
+    /**
+     * `true` to show the button as IconButton.
+     *
+     * If you only use `startIcon` without any `children` the button will automatically be render as IconButton.
+     */
     iconButton: {
       true: {
         root: {
@@ -115,6 +124,9 @@ export const buttonRecipe = sva({
         },
       },
     },
+    /**
+     * `true` to show the button with a min height of 24px instead of 36px.
+     */
     compact: {
       true: {
         root: {
@@ -132,6 +144,9 @@ export const buttonRecipe = sva({
         },
       },
     },
+    /**
+     * `true` to show the button in a loading state.
+     */
     loading: {
       true: {
         root: {
@@ -139,6 +154,9 @@ export const buttonRecipe = sva({
         },
       },
     },
+    /**
+     * If `true`, the button will take up the full width of its container.
+     */
     fullWidth: {
       true: {
         root: {
@@ -146,11 +164,13 @@ export const buttonRecipe = sva({
         },
       },
     },
+    /**
+     * If `true`, the button will be disabled.
+     */
     disabled: {
       true: {
         root: {
-          cursor: "not-allowed !important",
-          color: "text.disabled !important",
+          cursor: "not-allowed",
         },
       },
     },
@@ -166,6 +186,7 @@ export const buttonRecipe = sva({
         "warning",
         "danger",
       ],
+      disabled: false,
       css: {
         root: {
           color: "text.inverted",
@@ -177,6 +198,7 @@ export const buttonRecipe = sva({
     {
       variant: "contained",
       variantColor: "primary",
+      disabled: false,
       css: {
         root: {
           backgroundColor: "primary.main",
@@ -189,6 +211,7 @@ export const buttonRecipe = sva({
     {
       variant: "contained",
       variantColor: "secondary",
+      disabled: false,
       css: {
         root: {
           backgroundColor: "secondary.main",
@@ -201,6 +224,7 @@ export const buttonRecipe = sva({
     {
       variant: "contained",
       variantColor: "info",
+      disabled: false,
       css: {
         root: {
           backgroundColor: "info.main",
@@ -213,6 +237,7 @@ export const buttonRecipe = sva({
     {
       variant: "contained",
       variantColor: "success",
+      disabled: false,
       css: {
         root: {
           backgroundColor: "success.main",
@@ -225,6 +250,7 @@ export const buttonRecipe = sva({
     {
       variant: "contained",
       variantColor: "warning",
+      disabled: false,
       css: {
         root: {
           backgroundColor: "warning.main",
@@ -237,6 +263,7 @@ export const buttonRecipe = sva({
     {
       variant: "contained",
       variantColor: "danger",
+      disabled: false,
       css: {
         root: {
           backgroundColor: "danger.main",
@@ -249,6 +276,7 @@ export const buttonRecipe = sva({
     {
       variant: "outlined",
       variantColor: "primary",
+      disabled: false,
       css: {
         root: {
           color: "primary.main",
@@ -267,6 +295,7 @@ export const buttonRecipe = sva({
     {
       variant: "outlined",
       variantColor: "secondary",
+      disabled: false,
       css: {
         root: {
           color: "secondary.main",
@@ -285,6 +314,7 @@ export const buttonRecipe = sva({
     {
       variant: "outlined",
       variantColor: "info",
+      disabled: false,
       css: {
         root: {
           color: "info.main",
@@ -303,6 +333,7 @@ export const buttonRecipe = sva({
     {
       variant: "outlined",
       variantColor: "success",
+      disabled: false,
       css: {
         root: {
           color: "success.main",
@@ -321,6 +352,7 @@ export const buttonRecipe = sva({
     {
       variant: "outlined",
       variantColor: "warning",
+      disabled: false,
       css: {
         root: {
           color: "warning.main",
@@ -339,6 +371,7 @@ export const buttonRecipe = sva({
     {
       variant: "outlined",
       variantColor: "danger",
+      disabled: false,
       css: {
         root: {
           color: "danger.main",
@@ -357,6 +390,7 @@ export const buttonRecipe = sva({
     {
       variant: "ghost",
       variantColor: "primary",
+      disabled: false,
       css: {
         root: {
           color: "primary.main",
@@ -374,6 +408,7 @@ export const buttonRecipe = sva({
     {
       variant: "ghost",
       variantColor: "secondary",
+      disabled: false,
       css: {
         root: {
           color: "secondary.main",
@@ -391,6 +426,7 @@ export const buttonRecipe = sva({
     {
       variant: "ghost",
       variantColor: "info",
+      disabled: false,
       css: {
         root: {
           color: "info.main",
@@ -408,6 +444,7 @@ export const buttonRecipe = sva({
     {
       variant: "ghost",
       variantColor: "success",
+      disabled: false,
       css: {
         root: {
           color: "success.main",
@@ -425,6 +462,7 @@ export const buttonRecipe = sva({
     {
       variant: "ghost",
       variantColor: "warning",
+      disabled: false,
       css: {
         root: {
           color: "warning.main",
@@ -442,6 +480,7 @@ export const buttonRecipe = sva({
     {
       variant: "ghost",
       variantColor: "danger",
+      disabled: false,
       css: {
         root: {
           color: "danger.main",
