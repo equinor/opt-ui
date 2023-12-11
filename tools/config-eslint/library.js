@@ -11,8 +11,6 @@ module.exports = {
     "@vercel/style-guide/eslint/typescript",
     "@vercel/style-guide/eslint/browser",
     "@vercel/style-guide/eslint/react",
-    "@vercel/style-guide/eslint/jest",
-    "@vercel/style-guide/eslint/jest-react",
     "eslint-config-turbo",
   ].map(require.resolve),
   parserOptions: {
@@ -43,10 +41,10 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/no-empty-interface": "off",
-    "@typescript-eslint/naming-convention": [
-      "error",
-      { selector: ["enumMember"], format: ["UPPER_CASE"] },
-    ],
+    // "@typescript-eslint/naming-convention": [
+    //   "error",
+    //   { selector: ["enumMember"], format: ["UPPER_CASE"] },
+    // ],
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-unsafe-enum-comparison": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
@@ -62,7 +60,17 @@ module.exports = {
     "react/hook-use-state": "off",
     "react/jsx-no-leaked-render": "off",
     "react/no-array-index-key": "off",
-    // Jest fixes
-    "jest/prefer-lowercase-title": "off",
   },
+  overrides: [
+    {
+      files: ["**/?(*.)+(spec|test).[jt]s?(x)"],
+      extends: [
+        "@vercel/style-guide/eslint/jest",
+        "@vercel/style-guide/eslint/jest-react",
+      ].map(require.resolve),
+      rules: {
+        "jest/prefer-lowercase-title": "off",
+      },
+    },
+  ],
 };

@@ -43,10 +43,10 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/no-empty-interface": "off",
-    "@typescript-eslint/naming-convention": [
-      "error",
-      { selector: ["enumMember"], format: ["UPPER_CASE"] },
-    ],
+    // "@typescript-eslint/naming-convention": [
+    //   "error",
+    //   { selector: ["enumMember"], format: ["UPPER_CASE"] },
+    // ],
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-unsafe-enum-comparison": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
@@ -65,4 +65,16 @@ module.exports = {
     // Nextjs fixes
     "import/no-unresolved": ["error", { ignore: [".svg"] }], // Fix import svg files for typescript
   },
+  overrides: [
+    {
+      files: ["**/?(*.)+(spec|test).[jt]s?(x)"],
+      extends: [
+        "@vercel/style-guide/eslint/jest",
+        "@vercel/style-guide/eslint/jest-react",
+      ].map(require.resolve),
+      rules: {
+        "jest/prefer-lowercase-title": "off",
+      },
+    },
+  ],
 };

@@ -78,17 +78,10 @@ export default {
   component: Button,
   parameters: {
     docs: {
-      // controls: { exclude: ["style"] },
+      controls: { exclude: ["style"] },
     },
   },
   tags: ["autodocs"],
-  argTypes: {
-    //   ...generateArgTypesFromRecipe(buttonRecipe),
-    //   ...generateAsArgType(),
-    //   ...generateArgType<ButtonProps>("href", "text"),
-    //   ...generateArgType<ButtonProps>("disableRipple", "boolean"),
-    //   ...generateArgType<ButtonProps>("iconSize", "number"),
-  },
   render: (args) => {
     return <Button {...args} />;
   },

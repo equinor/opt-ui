@@ -14,9 +14,7 @@ import {
 
 type As = ElementType;
 
-type PropsOf<T extends As> = ComponentPropsWithoutRef<T> & {
-  as?: As;
-};
+type PropsOf<T extends As> = ComponentPropsWithoutRef<T>;
 
 type RightJoinProps<
   SourceProps extends object = {},

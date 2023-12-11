@@ -1,14 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any -- Allowing it for this story */
 import { Primary, Title } from "@storybook/addon-docs";
 import { circularJsonStringify } from "../../../src";
 
 // Base story
 export function Base() {
-  type CircularReferenceType = {
-    data: number;
-    circularData: CircularReferenceType;
-  };
-  const circularReference = { data: 123 } as CircularReferenceType;
-  circularReference.circularData = circularReference;
+  const circularReference = { data: 123 };
+  (circularReference as any).circularData = circularReference;
   return <p>{circularJsonStringify(circularReference)}</p>;
 }
 

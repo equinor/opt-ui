@@ -64,5 +64,7 @@ module.exports = {
     // React fixes
     "react/hook-use-state": "off",
     "react/jsx-no-leaked-render": "off",
+    // Others
+    "prefer-named-capture-group": "off",
   },
 };
