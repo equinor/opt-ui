@@ -220,7 +220,7 @@ export const chipRecipe = sva({
       css: {
         root: {
           _hover: {
-            color: "info.hover",
+            color: "text.primary",
             borderColor: "info.hover",
           },
         },
@@ -236,6 +236,7 @@ export const chipRecipe = sva({
           _hover: {
             backgroundColor: "info.hover",
             borderColor: "info.hover",
+            color: "text.primary",
           },
         },
       },
