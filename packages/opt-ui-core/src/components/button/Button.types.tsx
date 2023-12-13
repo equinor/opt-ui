@@ -1,8 +1,10 @@
-import type { ButtonRecipeProps } from "@equinor/opt-ui-base/recipes";
+import type {
+  ButtonRecipeProps,
+  ButtonRecipeSlots,
+} from "@equinor/opt-ui-base/recipes";
 import type { HTMLStyledProps } from "@equinor/opt-ui-styled-system/types";
 import type { ReactNode } from "react";
 
-// Define base button props which extends from the button recipe props.
 export interface ButtonProps
   extends HTMLStyledProps<"button">,
     ButtonRecipeProps {
@@ -15,10 +17,9 @@ export interface ButtonProps
    */
   className?: string;
   /**
-   * If `true`, the button will be disabled.
-   * @defaultValue false
+   * The classNames for the component slots.
    */
-  disabled?: boolean;
+  classNames?: Record<ButtonRecipeSlots | "ripple", string>;
   /**
    * Element placed before the children.
    * @defaultValue undefined
@@ -34,6 +35,11 @@ export interface ButtonProps
    * @defaultValue 18
    */
   iconSize?: number;
+  /**
+   * If `true`, the button will be disabled.
+   * @defaultValue false
+   */
+  disabled?: boolean;
   /**
    * If `true`, the ripple effect will be disabled.
    * @defaultValue false

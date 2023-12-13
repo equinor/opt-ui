@@ -8,8 +8,9 @@ import type { ButtonProps } from "./Button.types";
 // Component
 const Button = forwardRefWithAs<ButtonProps, "button">(function Button(
   {
-    className,
     children,
+    className,
+    classNames = {},
     css: cssProp,
     as = "button",
     variant = "contained",
@@ -27,10 +28,10 @@ const Button = forwardRefWithAs<ButtonProps, "button">(function Button(
   },
   ref
 ) {
+  const Comp = styled(as);
   const hasChildren = typeof children !== "undefined" && !!children;
   const isIconButton =
     !hasChildren && ((!!startIcon && !endIcon) || (!!endIcon && !startIcon));
-  const isLinkButton = as === "a";
   const classes = buttonRecipe.raw({
     variant,
     variantColor,
@@ -40,7 +41,6 @@ const Button = forwardRefWithAs<ButtonProps, "button">(function Button(
     fullWidth,
     disabled,
   });
-  const Comp = styled(as);
   const [styledProps, restProps] = splitCssProps(other);
 
   // Render
@@ -48,19 +48,20 @@ const Button = forwardRefWithAs<ButtonProps, "button">(function Button(
     <Comp
       aria-disabled={disabled}
       className={cx(
-        css(classes.root, styledProps, cssProp),
         "opt-button",
         `opt-button--${variant}`,
         `opt-button--${variantColor}`,
-        className
+        css(classes.root, styledProps, cssProp),
+        className,
+        classNames.root
       )}
       disabled={disabled}
       ref={ref}
-      type={!isLinkButton && as === "button" ? "button" : undefined}
+      type={as === "button" ? "button" : undefined}
       {...restProps}
     >
       {children}
-      {!disabled && !disableRipple && <Ripple />}
+      {!disabled && !disableRipple && <Ripple className={classNames.ripple} />}
     </Comp>
   );
 });
