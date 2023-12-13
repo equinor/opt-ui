@@ -30,7 +30,7 @@ export default {
   title: "Utils/Functions/toKebabCase",
   component: toKebabCase,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>

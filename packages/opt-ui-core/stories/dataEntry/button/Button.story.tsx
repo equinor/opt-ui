@@ -54,7 +54,7 @@ export const FloatingActionButton: Story = {
     "aria-label": "FAB button",
     height: "56px",
     iconSize: 24,
-    startIcon: <span>T</span>,
+    // startIcon: <AddIcon />,
     width: "56px",
   },
 };
@@ -78,7 +78,7 @@ export default {
   component: Button,
   parameters: {
     docs: {
-      controls: { exclude: ["style"] },
+      controls: { exclude: ["style"], sort: "alpha" },
     },
   },
   tags: ["autodocs"],

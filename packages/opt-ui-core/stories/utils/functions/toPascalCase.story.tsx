@@ -30,15 +30,12 @@ export default {
   title: "Utils/Functions/toPascalCase",
   component: toPascalCase,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>
           <Title>toPascalCase</Title>
-          <p>
-            Transform a string in kebab-case or camelCase or snake_case into
-            PascalCase.
-          </p>
+          <p>Transform a string into PascalCase format.</p>
           <Primary />
         </>
       ),

@@ -30,7 +30,7 @@ export default {
   title: "Utils/Hooks/useDebouncedCallback",
   component: useDebouncedCallback,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>
@@ -46,8 +46,9 @@ export default {
             function every xx seconds (2nd parameter).
             <br />
             <br />
-            Use this hook instead of the `useDebounce` when you want to update
-            another state on change but still control the input value.
+            Use this hook instead of the <strong>useDebounce</strong> when you
+            want to update another state on change but still control the input
+            value.
             <br />
             <br />
             This hook is ideal to for example search functionalities where you

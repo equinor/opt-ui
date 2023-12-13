@@ -30,7 +30,7 @@ export default {
   component: Ripple,
   parameters: {
     docs: {
-      controls: { exclude: ["style"] },
+      controls: { exclude: ["style"], sort: "alpha" },
     },
   },
   tags: ["autodocs"],

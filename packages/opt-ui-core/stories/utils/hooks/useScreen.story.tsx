@@ -17,7 +17,7 @@ export default {
   title: "Utils/Hooks/useScreen",
   component: useScreen,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>

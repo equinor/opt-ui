@@ -12,7 +12,7 @@ export default {
   title: "Utils/Hooks/useReadLocalStorage",
   component: useReadLocalStorage,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>
@@ -24,7 +24,8 @@ export default {
             <br />
             <br />
             If the window object is not present (as in SSR), or if the value
-            doesn&apos;t exist, `useReadLocalStorage()` will return null.
+            doesn&apos;t exist, <strong>useReadLocalStorage()</strong> will
+            return null.
           </p>
           <Primary />
         </>

@@ -20,7 +20,7 @@ export default {
   title: "Utils/Hooks/useElementSize",
   component: useElementSize,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>

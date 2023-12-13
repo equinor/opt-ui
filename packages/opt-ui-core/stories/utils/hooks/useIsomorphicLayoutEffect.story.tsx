@@ -14,14 +14,14 @@ export default {
   title: "Utils/Hooks/useIsomorphicLayoutEffect",
   component: useIsomorphicLayoutEffect,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>
           <Title>useIsomorphicLayoutEffect</Title>
           <p>
-            Returns `useLayoutEffect` or `useEffect` based on the best possible
-            choice.
+            Returns <strong>useLayoutEffect</strong> or{" "}
+            <strong>useEffect</strong> based on the best possible choice.
           </p>
           <Primary />
         </>

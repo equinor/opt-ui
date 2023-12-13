@@ -14,7 +14,7 @@ export default {
   title: "Utils/Functions/circularJsonStringify",
   component: circularJsonStringify,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>

@@ -40,7 +40,7 @@ export default {
   title: "Utils/Hooks/useIntersectionObserver",
   component: useIntersectionObserver,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>
@@ -62,10 +62,11 @@ export default {
             &quot;infinite scrolling&quot; or starting animations.
             <br />
             <br />
-            You must pass the ref element (from `useRef()`).
+            You must pass the ref element (from <strong>useRef()</strong>).
             <br />
             <br />
-            It takes optionally `root`, `rootMargin` and `threshold` arguments
+            It takes optionally <strong>root</strong>,{" "}
+            <strong>rootMargin</strong> and <strong>threshold</strong> arguments
             from the{" "}
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API"

@@ -23,7 +23,7 @@ export default {
   title: "Utils/Hooks/useLocalStorage",
   component: useLocalStorage,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>
@@ -35,8 +35,8 @@ export default {
             <br />
             This hook is used in the same way as useState except that you must
             pass the storage key in the 1st parameter. If the window object is
-            not present (as in SSR), useLocalStorage() will return the initial
-            value.
+            not present (as in SSR), <strong>useLocalStorage()</strong> will
+            return the initial value.
           </p>
           <Primary />
         </>

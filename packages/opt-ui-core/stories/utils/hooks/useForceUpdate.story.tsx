@@ -23,19 +23,20 @@ export default {
   title: "Utils/Hooks/useForceUpdate",
   component: useForceUpdate,
   parameters: {
-    controls: { exclude: ["style"] },
+    controls: { exclude: ["style"], sort: "alpha" },
     docs: {
       page: () => (
         <>
           <Title>useForceUpdate</Title>
           <p>
             Returns a function that triggers a component update. the hook
-            equivalent to `this.forceUpdate()` in a class component.
+            equivalent to <strong>this.forceUpdate()</strong> in a class
+            component.
             <br />
             <br />
-            In most cases using a state value with `useState` is preferable but
-            this hook can be useful in some advanced usages of refs for interop
-            or when direct DOM manipulation is required.
+            In most cases using a state value with <strong>useState</strong> is
+            preferable but this hook can be useful in some advanced usages of
+            refs for interop or when direct DOM manipulation is required.
           </p>
           <Primary />
         </>
