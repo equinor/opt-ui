@@ -83,6 +83,9 @@ export function generatePresetTextStyles() {
     ingress: {
       value: cleanTextStyleToken(tokens.typography.paragraph.ingress),
     },
+    button: {
+      value: cleanTextStyleToken(tokens.typography.navigation.button),
+    },
   });
   return textStyles;
 }

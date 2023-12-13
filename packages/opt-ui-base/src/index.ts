@@ -1,6 +1,7 @@
 import { definePreset } from "@pandacss/dev";
 import { generatePresetColors } from "./generators/generatePresetColors";
 import { generatePresetConditions } from "./generators/generatePresetConditions";
+import { generatePresetKeyFrames } from "./generators/generatePresetKeyFrames";
 import { generatePresetSemanticColors } from "./generators/generatePresetSemanticColors";
 import { generatePresetTextStyles } from "./generators/generatePresetTextStyles";
 import type { OptUiPresetOptions } from "./types";
@@ -31,6 +32,7 @@ export function optUiPreset(options?: OptUiPresetOptions) {
           colors: generatePresetSemanticColors(themes),
         },
         textStyles: generatePresetTextStyles(),
+        keyframes: generatePresetKeyFrames(),
       },
     },
     globalCss: {
