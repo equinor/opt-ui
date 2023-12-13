@@ -1,4 +1,5 @@
 // Utils
+export * from "./components/badge";
 export * from "./utils/capitalize";
 export * from "./utils/circularJsonStringify";
 export * from "./utils/toCamelCase";
