@@ -1,5 +1,6 @@
 // Components
 export * from "./components/button";
+export * from "./components/circularProgress";
 export * from "./components/ripple";
 
 // Hooks
