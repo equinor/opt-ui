@@ -8,12 +8,10 @@ export const buttonRecipe = sva({
   base: {
     root: {
       position: "relative",
-      textStyle: "bodyLong",
-      fontSize: "0.875rem",
-      fontWeight: 500,
       display: "inline-flex",
       alignItems: "center",
       gap: "8px",
+      textStyle: "button",
       minWidth: "36px",
       minHeight: "36px",
       width: "fit-content",
@@ -516,6 +514,8 @@ export const buttonRecipe = sva({
     disabled: false,
   },
 });
+
+export type ButtonRecipeSlots = keyof ReturnType<typeof buttonRecipe>;
 
 export type ButtonRecipeProps = NonNullable<
   RecipeVariantProps<typeof buttonRecipe>
