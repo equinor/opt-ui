@@ -30,8 +30,15 @@ export default {
   component: Ripple,
   parameters: {
     docs: {
-      controls: { exclude: ["style"], sort: "alpha" },
+      controls: { exclude: ["style"] },
     },
   },
   tags: ["autodocs"],
+  argTypes: {
+    backgroundColor: {
+      control: {
+        type: "color",
+      },
+    },
+  },
 } satisfies Meta<typeof Ripple>;

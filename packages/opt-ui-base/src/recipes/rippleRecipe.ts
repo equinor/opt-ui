@@ -4,7 +4,7 @@ import {
 } from "@equinor/opt-ui-styled-system/css";
 
 export const rippleRecipe = sva({
-  slots: ["root", "element"],
+  slots: ["root", "ripple"],
   base: {
     root: {
       position: "absolute",
@@ -14,16 +14,20 @@ export const rippleRecipe = sva({
       left: 0,
       zIndex: 1,
     },
-    element: {
+    ripple: {
+      backgroundColor: "#000",
       transform: "scale(0)",
       position: "absolute",
       borderRadius: "100%",
       opacity: "0.2",
       animationName: "ping",
+      animationDuration: "750ms",
       mixBlendMode: "darken",
     },
   },
 });
+
+export type RippleRecipeSlots = keyof ReturnType<typeof rippleRecipe>;
 
 export type RippleRecipeProps = NonNullable<
   RecipeVariantProps<typeof rippleRecipe>

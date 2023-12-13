@@ -34,56 +34,56 @@ function useDebouncedRippleCleanUp(
 }
 
 // Component
-const Ripple = forwardRef<HTMLSpanElement, RippleProps>(
-  ({ className, duration = 750, backgroundColor = "#000" }, ref) => {
-    const [rippleArray, setRippleArray] = useState<RippleElement[]>([]);
-    useDebouncedRippleCleanUp(rippleArray.length, duration, () => {
-      setRippleArray([]);
-    });
-    const classes = rippleRecipe();
+const Ripple = forwardRef<HTMLSpanElement, RippleProps>(function Ripple(
+  { className, duration = 750, backgroundColor },
+  ref
+) {
+  const classes = rippleRecipe();
+  const [rippleArray, setRippleArray] = useState<RippleElement[]>([]);
+  useDebouncedRippleCleanUp(rippleArray.length, duration, () => {
+    setRippleArray([]);
+  });
 
-    // Methods
-    const addRipple = (event: MouseEvent<HTMLDivElement>) => {
-      const { pageX, pageY, currentTarget } = event;
-      const rect = currentTarget.getBoundingClientRect();
-      const size = Math.max(rect.width, rect.height);
-      const x = pageX - (rect.x + window.scrollX) - size / 2;
-      const y = pageY - (rect.y + window.scrollY) - size / 2;
-      const newRipple = {
-        x,
-        y,
-        size,
-      };
-      setRippleArray([...rippleArray, newRipple]);
+  // Methods
+  const addRipple = (event: MouseEvent<HTMLDivElement>) => {
+    const { pageX, pageY, currentTarget } = event;
+    const rect = currentTarget.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const x = pageX - (rect.x + window.scrollX) - size / 2;
+    const y = pageY - (rect.y + window.scrollY) - size / 2;
+    const newRipple = {
+      x,
+      y,
+      size,
     };
+    setRippleArray([...rippleArray, newRipple]);
+  };
 
-    // Render
-    return (
-      <styled.span
-        className={cx(classes.root, "opt-ripple", className)}
-        onClick={addRipple}
-        ref={ref}
-      >
-        {rippleArray.length > 0 &&
-          rippleArray.map((ripple, index) => (
-            <styled.span
-              animationDuration={`${duration}ms`}
-              backgroundColor={backgroundColor}
-              className={cx("opt-ripple__element", classes.element)}
-              key={`ripple.element-${index}`}
-              style={{
-                top: ripple.y,
-                left: ripple.x,
-                width: ripple.size,
-                height: ripple.size,
-              }}
-            />
-          ))}
-      </styled.span>
-    );
-  }
-);
-
-Ripple.displayName = "Ripple";
+  // Render
+  return (
+    <styled.span
+      className={cx("opt-ripple", classes.root, className)}
+      onClick={addRipple}
+      ref={ref}
+    >
+      {rippleArray.length > 0 &&
+        rippleArray.map((ripple, index) => (
+          <styled.span
+            backgroundColor={backgroundColor}
+            className={cx("opt-ripple__ripple", classes.ripple)}
+            key={`ripple-${index}`}
+            style={{
+              top: ripple.y,
+              left: ripple.x,
+              width: ripple.size,
+              height: ripple.size,
+              animationDuration: `${duration}ms`,
+              backgroundColor: backgroundColor?.toString(),
+            }}
+          />
+        ))}
+    </styled.span>
+  );
+});
 
 export default Ripple;
