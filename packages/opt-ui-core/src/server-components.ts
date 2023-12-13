@@ -2,6 +2,7 @@
 export * from "./hooks/useSsr";
 
 // Utils
+export * from "./components/chip";
 export * from "./utils/capitalize";
 export * from "./utils/circularJsonStringify";
 export * from "./utils/toCamelCase";
