@@ -22,7 +22,6 @@
     "@storybook/addon-a11y": "7.6.4",
     "@storybook/addon-essentials": "7.6.4",
     "@storybook/addon-interactions": "7.6.4",
-    "@storybook/addon-jest": "7.6.4",
     "@storybook/addon-links": "7.6.4",
     "@storybook/blocks": "7.6.4",
     "@storybook/builder-vite": "7.6.4",
@@ -32,6 +31,6 @@
     "@storybook/testing-library": "0.2.2",
     "@storybook/theming": "7.6.4",
     "storybook": "7.6.4",
-    "vite": "5.0.7"
+    "vite": "5.0.8"
   }
 }
