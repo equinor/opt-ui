@@ -24,7 +24,7 @@ export const ClickableChip: Story = {
 };
 // Clickable chip
 export const CloseChip: Story = {
-  render: (args) => {
+  render: function Render(args) {
     const [isVisible, setIsVisible] = useState(true);
     return isVisible ? (
       <Chip
