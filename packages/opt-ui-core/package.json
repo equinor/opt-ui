@@ -36,13 +36,13 @@
         "types": "./dist/index.d.mts"
       }
     },
-    "./server-components": {
-      "source": "./src/server-components.ts",
-      "types": "./dist/server-components.d.ts",
-      "require": "./dist/server-components.js",
+    "./server": {
+      "source": "./src/server.ts",
+      "types": "./dist/server.d.ts",
+      "require": "./dist/server.js",
       "import": {
-        "default": "./dist/server-components.mjs",
-        "types": "./dist/server-components.d.mts"
+        "default": "./dist/server.mjs",
+        "types": "./dist/server.d.mts"
       }
     },
     "./style-system": {

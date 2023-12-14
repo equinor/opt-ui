@@ -1,11 +1,7 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: [
-    "./src/index.ts",
-    "./src/server-components.ts",
-    "./src/style-system.ts",
-  ],
+  entry: ["./src/index.ts", "./src/server.ts", "./src/style-system.ts"],
   format: ["esm", "cjs"],
   treeshake: true,
   splitting: true,

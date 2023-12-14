@@ -52,6 +52,7 @@ To enable autocomplete on you IDE you can add `@equinor/opt-ui-styled-system` as
 }
 ```
 
+> [!IMPORTANT]
 > Remember to include the `panda codegen` script, as explained in the [Panda CSS documentation](https://panda-css.com/docs/installation/postcss#update-packagejson-scripts), in your `package.json`. This ensures that the `prepare` script will generate `@equinor/opt-ui-styled-system` when installing the node_modules.
 
 ## Usage
@@ -59,15 +60,22 @@ To enable autocomplete on you IDE you can add `@equinor/opt-ui-styled-system` as
 Once set up `panda CSS` is set up you should define your application to use a theme and a color mode.
 
 ```jsx
-<html data-theme="equinor" data-color-mode="light|dark">
-  <body>
-    <h1 className={css({ color: "primary.main" })}>Hello World</h1>
-  </body>
-</html>
+import { css } from "@equinor/opt-ui-styled-system/css";
+
+function App() {
+  return (
+    <html data-theme="equinor" data-color-mode="light|dark">
+      <body>
+        <h1 className={css({ color: "primary.main" })}>Hello World</h1>
+      </body>
+    </html>
+  );
+}
 ```
 
-`optUiPreset` comes with our default `Equinor` theme that you can use, using a theme will ensure that all the recipes utilize the proper colors. Alternatively, you can define your own theme, as explained in the next section.
+`optUiPreset` comes with our default `Equinor` theme, but you can create your own themes. Using a theme will ensure that all the recipes utilize the proper colors.
 
+> [!NOTE]
 > If no `data-color-mode` is provided it will use light mode by default.
 
 ## Multi-Theme support
@@ -106,36 +114,50 @@ export default defineConfig({
 });
 ```
 
+> [!IMPORTANT]
 > A theme MUST define all the color's pallette
 
 ### Use the theme
 
 ```jsx
-<html data-theme="pink" data-color-mode="dark">
-  <body>
-    <h1 className={css({ color: "primary.main" })}>Hello World</h1>
-  </body>
-</html>
+import { css } from "@equinor/opt-ui-styled-system/css";
+
+function App() {
+  return (
+    <html data-theme="pink" data-color-mode="dark">
+      <body>
+        <h1 className={css({ color: "primary.main" })}>Hello World</h1>
+      </body>
+    </html>
+  );
+}
 ```
 
 You can place the `data-theme` or `data-color-mode` attributes anywhere; they are not restricted to the HTML node, and the system will use the last one defined.
 
 ```jsx
-<html data-theme="equinor" data-color-mode="dark">
-  <body>
-    <p className={css({ color: "primary.main" })}>
-      Text with color primary main using the default equinor theme and dark
-      mode.
-    </p>
-    <div data-theme="pink" data-color-mode="dark">
-      <p className={css({ color: "primary.main" })}>
-        Text with color primary main using the pink theme and dark mode.
-      </p>
-    </div>
-  </body>
-</html>
+import { css } from "@equinor/opt-ui-styled-system/css";
+
+function App() {
+  return (
+    <html data-theme="equinor" data-color-mode="dark">
+      <body>
+        <p className={css({ color: "primary.main" })}>
+          Text with color primary main using the default equinor theme and dark
+          mode.
+        </p>
+        <div data-theme="pink" data-color-mode="dark">
+          <p className={css({ color: "primary.main" })}>
+            Text with color primary main using the pink theme and dark mode.
+          </p>
+        </div>
+      </body>
+    </html>
+  );
+}
 ```
 
+> [!CAUTION]
 > If you define a `data-theme`, you should also define `data-color-mode`; otherwise, a light theme will be used, even if you had defined data-color-mode in a previous node.
 
 ## License
