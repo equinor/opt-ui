@@ -4,7 +4,7 @@ import {
 } from "@equinor/opt-ui-styled-system/css";
 
 export const buttonRecipe = sva({
-  slots: ["root", "adornment"],
+  slots: ["root", "adornment", "loader"],
   base: {
     root: {
       position: "relative",
@@ -500,6 +500,83 @@ export const buttonRecipe = sva({
         root: {
           width: "32px",
           height: "32px",
+        },
+      },
+    },
+    {
+      variant: "contained",
+      variantColor: [
+        "primary",
+        "secondary",
+        "info",
+        "success",
+        "warning",
+        "danger",
+      ],
+      loading: true,
+      css: {
+        loader: {
+          color: "text.inverted",
+        },
+      },
+    },
+    {
+      variant: ["outlined", "ghost"],
+      variantColor: "primary",
+      loading: true,
+      css: {
+        loader: {
+          color: "primary.main",
+        },
+      },
+    },
+    {
+      variant: ["outlined", "ghost"],
+      variantColor: "secondary",
+      loading: true,
+      css: {
+        loader: {
+          color: "secondary.main",
+        },
+      },
+    },
+    {
+      variant: ["outlined", "ghost"],
+      variantColor: "info",
+      loading: true,
+      css: {
+        loader: {
+          color: "info.main",
+        },
+      },
+    },
+    {
+      variant: ["outlined", "ghost"],
+      variantColor: "success",
+      loading: true,
+      css: {
+        loader: {
+          color: "success.main",
+        },
+      },
+    },
+    {
+      variant: ["outlined", "ghost"],
+      variantColor: "warning",
+      loading: true,
+      css: {
+        loader: {
+          color: "warning.main",
+        },
+      },
+    },
+    {
+      variant: ["outlined", "ghost"],
+      variantColor: "danger",
+      loading: true,
+      css: {
+        loader: {
+          color: "danger.main",
         },
       },
     },

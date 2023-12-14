@@ -2,6 +2,8 @@ import { buttonRecipe } from "@equinor/opt-ui-base/recipes";
 import { css, cx } from "@equinor/opt-ui-styled-system/css";
 import { splitCssProps, styled } from "@equinor/opt-ui-styled-system/jsx";
 import { forwardRefWithAs } from "../../internal/forwardRefWithAs";
+import { CircularProgress } from "../circularProgress";
+import { DotsProgress } from "../dotsProgress";
 import { Ripple } from "../ripple";
 import type { ButtonProps } from "./Button.types";
 
@@ -23,6 +25,7 @@ const Button = forwardRefWithAs<ButtonProps, "button">(function Button(
     startIcon = undefined,
     endIcon = undefined,
     iconSize = 18,
+    loaderSize,
     ...other
   },
   ref
@@ -30,11 +33,12 @@ const Button = forwardRefWithAs<ButtonProps, "button">(function Button(
   const Comp = styled(as);
   const hasChildren = typeof children !== "undefined" && !!children;
   const isIconButton =
-    !hasChildren && ((!!startIcon && !endIcon) || (!!endIcon && !startIcon));
+    iconButton ||
+    (!hasChildren && ((!!startIcon && !endIcon) || (!!endIcon && !startIcon)));
   const classes = buttonRecipe.raw({
     variant,
     variantColor,
-    iconButton: iconButton || isIconButton,
+    iconButton: isIconButton,
     compact,
     loading,
     fullWidth,
@@ -50,16 +54,28 @@ const Button = forwardRefWithAs<ButtonProps, "button">(function Button(
         "opt-button",
         `opt-button--${variant}`,
         `opt-button--${variantColor}`,
-        css(classes.root, styledProps, cssProp),
-        className
+        className,
+        css(classes.root, styledProps, cssProp)
       )}
       disabled={disabled}
       ref={ref}
       type={as === "button" ? "button" : undefined}
       {...restProps}
     >
-      {children}
-      {!disabled && !disableRipple && <Ripple />}
+      {!loading ? (
+        <>
+          {children}
+          {!disabled && !disableRipple && <Ripple />}
+        </>
+      ) : (
+        <>
+          {isIconButton ? (
+            <CircularProgress css={classes.loader} size={loaderSize ?? 24} />
+          ) : (
+            <DotsProgress css={classes.loader} mx="5px" size={loaderSize} />
+          )}
+        </>
+      )}
     </Comp>
   );
 });

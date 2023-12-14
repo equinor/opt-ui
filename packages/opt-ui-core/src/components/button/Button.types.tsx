@@ -29,6 +29,11 @@ export interface ButtonProps
    */
   iconSize?: number;
   /**
+   * The size of the loader.
+   * @defaultValue undefined
+   */
+  loaderSize?: number;
+  /**
    * If `true`, the button will be disabled.
    * @defaultValue false
    */
