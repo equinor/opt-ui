@@ -52,7 +52,7 @@ To enable autocomplete on you IDE you can add `@equinor/opt-ui-styled-system` as
 }
 ```
 
-> [!IMPORTANT]
+> [!TIP]
 > Remember to include the `panda codegen` script, as explained in the [Panda CSS documentation](https://panda-css.com/docs/installation/postcss#update-packagejson-scripts), in your `package.json`. This ensures that the `prepare` script will generate `@equinor/opt-ui-styled-system` when installing the node_modules.
 
 ## Usage
