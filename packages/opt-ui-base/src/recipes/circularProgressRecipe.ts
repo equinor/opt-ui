@@ -63,6 +63,10 @@ export const circularProgressRecipe = sva({
   },
 });
 
+export type CircularProgressRecipeSlots = keyof ReturnType<
+  typeof circularProgressRecipe
+>;
+
 export type CircularProgressRecipeProps = NonNullable<
   RecipeVariantProps<typeof circularProgressRecipe>
 >;
