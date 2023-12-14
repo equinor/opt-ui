@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:ts": "tsc --noEmit",
-    "clean": "rimraf .turbo dist storybook-static tsconfig.tsbuildinfo",
+    "clean": "rimraf .turbo dist storybook-static tsconfig.tsbuildinfo node_modules",
     "dev": "storybook dev -p 6006 --config-dir ./config",
     "build": "storybook build --config-dir ./config --quiet"
   },

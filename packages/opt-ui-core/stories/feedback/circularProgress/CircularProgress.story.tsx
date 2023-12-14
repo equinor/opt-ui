@@ -6,7 +6,9 @@ type Story = StoryObj<typeof CircularProgress>;
 
 // Base story
 export const Base: Story = {
-  args: {},
+  render: (args) => {
+    return <CircularProgress {...args} aria-label="Progress" />;
+  },
 };
 
 // Definition
@@ -25,8 +27,5 @@ export default {
         type: "color",
       },
     },
-  },
-  render: (args) => {
-    return <CircularProgress {...args} />;
   },
 } satisfies Meta<typeof CircularProgress>;
