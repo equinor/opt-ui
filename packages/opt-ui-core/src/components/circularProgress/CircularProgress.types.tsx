@@ -1,7 +1,4 @@
-import type {
-  CircularProgressRecipeProps,
-  CircularProgressRecipeSlots,
-} from "@equinor/opt-ui-base/recipes";
+import type { CircularProgressRecipeProps } from "@equinor/opt-ui-base/recipes";
 import type {
   HTMLStyledProps,
   JsxStyleProps,
@@ -19,10 +16,6 @@ export interface CircularProgressProps
    * The className of the component.
    */
   className?: string;
-  /**
-   * The classNames for the component slots.
-   */
-  classNames?: Record<CircularProgressRecipeSlots, string>;
   /**
    * The color of the loader.
    * @defaultValue undefined

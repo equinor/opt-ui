@@ -10,7 +10,6 @@ const CircularProgress = forwardRef<HTMLSpanElement, CircularProgressProps>(
   function CircularProgress(
     {
       className,
-      classNames = {},
       style = {},
       css: cssProp,
       variant = "indeterminate",
@@ -50,43 +49,33 @@ const CircularProgress = forwardRef<HTMLSpanElement, CircularProgressProps>(
           "opt-progress--circular",
           `opt-progress--${variant}`,
           css(classes.root, styledProps, cssProp),
-          className,
-          classNames.root
+          className
         )}
         ref={ref}
         role="progressbar"
         style={{
           width: `${size}px`,
           height: `${size}px`,
-          color: other.color?.toString(),
           ...style,
         }}
         {...rootProps}
         {...restProps}
       >
         <svg
-          className={cx(css(classes.svg), classNames.svg)}
+          className={css(classes.svg)}
           viewBox={`${BASE_SIZE / 2} ${
             BASE_SIZE / 2
           } ${BASE_SIZE} ${BASE_SIZE}`}
         >
           <circle
-            className={cx(
-              css(classes.circle, classes.circle__background),
-              classNames.circle,
-              classNames.circle__background
-            )}
+            className={css(classes.circle, classes.circle__background)}
             cx={BASE_SIZE}
             cy={BASE_SIZE}
             r={(BASE_SIZE - thickness) / 2}
             style={{ strokeWidth: thickness }}
           />
           <circle
-            className={cx(
-              css(classes.circle, classes.circle__progress),
-              classNames.circle,
-              classNames.circle__progress
-            )}
+            className={css(classes.circle, classes.circle__progress)}
             cx={BASE_SIZE}
             cy={BASE_SIZE}
             r={(BASE_SIZE - thickness) / 2}

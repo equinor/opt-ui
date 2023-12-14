@@ -10,7 +10,6 @@ const Button = forwardRefWithAs<ButtonProps, "button">(function Button(
   {
     children,
     className,
-    classNames = {},
     css: cssProp,
     as = "button",
     variant = "contained",
@@ -52,8 +51,7 @@ const Button = forwardRefWithAs<ButtonProps, "button">(function Button(
         `opt-button--${variant}`,
         `opt-button--${variantColor}`,
         css(classes.root, styledProps, cssProp),
-        className,
-        classNames.root
+        className
       )}
       disabled={disabled}
       ref={ref}
@@ -61,7 +59,7 @@ const Button = forwardRefWithAs<ButtonProps, "button">(function Button(
       {...restProps}
     >
       {children}
-      {!disabled && !disableRipple && <Ripple className={classNames.ripple} />}
+      {!disabled && !disableRipple && <Ripple />}
     </Comp>
   );
 });

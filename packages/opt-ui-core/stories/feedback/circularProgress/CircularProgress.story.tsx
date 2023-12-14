@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import type { CSSProperties } from "react";
 import { CircularProgress } from "../../../src";
 
 // Prop types
@@ -6,8 +7,21 @@ type Story = StoryObj<typeof CircularProgress>;
 
 // Base story
 export const Base: Story = {
-  render: (args) => {
-    return <CircularProgress {...args} aria-label="Progress" />;
+  render: ({ color, ...args }) => {
+    return (
+      <CircularProgress
+        {...args}
+        aria-label="Progress"
+        color={color && "var(--color)"}
+        style={
+          color
+            ? ({
+                "--color": color,
+              } as CSSProperties)
+            : undefined
+        }
+      />
+    );
   },
 };
 

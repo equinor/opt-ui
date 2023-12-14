@@ -27,8 +27,6 @@ export const rippleRecipe = sva({
   },
 });
 
-export type RippleRecipeSlots = keyof ReturnType<typeof rippleRecipe>;
-
 export type RippleRecipeProps = NonNullable<
   RecipeVariantProps<typeof rippleRecipe>
 >;

@@ -1,7 +1,4 @@
-import type {
-  ButtonRecipeProps,
-  ButtonRecipeSlots,
-} from "@equinor/opt-ui-base/recipes";
+import type { ButtonRecipeProps } from "@equinor/opt-ui-base/recipes";
 import type { HTMLStyledProps } from "@equinor/opt-ui-styled-system/types";
 import type { ReactNode } from "react";
 
@@ -16,10 +13,6 @@ export interface ButtonProps
    * The className of the component.
    */
   className?: string;
-  /**
-   * The classNames for the component slots.
-   */
-  classNames?: Record<ButtonRecipeSlots | "ripple", string>;
   /**
    * Element placed before the children.
    * @defaultValue undefined

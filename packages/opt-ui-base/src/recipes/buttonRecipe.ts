@@ -515,8 +515,6 @@ export const buttonRecipe = sva({
   },
 });
 
-export type ButtonRecipeSlots = keyof ReturnType<typeof buttonRecipe>;
-
 export type ButtonRecipeProps = NonNullable<
   RecipeVariantProps<typeof buttonRecipe>
 >;
