@@ -1,5 +1,6 @@
 // Component
 export * from "./components/circularProgress";
+export * from "./components/dotsProgress";
 
 // Hook
 export * from "./hooks/useSsr";

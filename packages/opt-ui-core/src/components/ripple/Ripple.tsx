@@ -62,7 +62,7 @@ const Ripple = forwardRef<HTMLSpanElement, RippleProps>(function Ripple(
   // Render
   return (
     <styled.span
-      className={cx("opt-ripple", classes.root, className)}
+      className={cx("opt-ripple", className, classes.root)}
       onClick={addRipple}
       ref={ref}
     >

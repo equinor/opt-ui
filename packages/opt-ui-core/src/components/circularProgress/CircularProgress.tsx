@@ -48,8 +48,8 @@ const CircularProgress = forwardRef<HTMLSpanElement, CircularProgressProps>(
           "opt-progress",
           "opt-progress--circular",
           `opt-progress--${variant}`,
-          css(classes.root, styledProps, cssProp),
-          className
+          className,
+          css(classes.root, styledProps, cssProp)
         )}
         ref={ref}
         role="progressbar"
