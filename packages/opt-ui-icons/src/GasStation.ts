@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"gas_station","prefix":"eds","height":"24","width":"24","svgPathData":"m19.53 7.22-.01.01c.45.45.73 1.08.73 1.77v9.5a2.5 2.5 0 0 1-5 0v-5h-1.5V21h-10V5c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v7h1c1.1 0 2 .9 2 2v4.5c0 .55.45 1 1 1s1-.45 1-1v-7.21c-.31.13-.64.21-1 .21a2.5 2.5 0 0 1-2.5-2.5c0-1.07.67-1.97 1.61-2.33l-2.11-2.11 1.06-1.06 3.72 3.72ZM11.75 19v-7h-6v7h6Zm0-9h-6V5h6v5Zm5-1c0 .55.45 1 1 1s1-.45 1-1-.45-1-1-1-1 .45-1 1Z"})

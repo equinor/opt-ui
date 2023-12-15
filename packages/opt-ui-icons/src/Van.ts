@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"van","prefix":"eds","height":"24","width":"24","svgPathData":"M17 5H3a2 2 0 0 0-2 2v9h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-6-6Zm-2 2h1l3 3h-4V7Zm-2 0H9v3h4V7ZM3 7h4v3H3V7Zm1.75 9a1.25 1.25 0 1 0 2.5 0 1.25 1.25 0 0 0-2.5 0ZM18 17.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5ZM20.22 14H21v-2H3v2h.78c.55-.61 1.33-1 2.22-1 .89 0 1.67.39 2.22 1h7.56c.55-.61 1.34-1 2.22-1 .88 0 1.67.39 2.22 1Z"})

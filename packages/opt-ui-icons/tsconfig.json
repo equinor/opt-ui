@@ -1,0 +1,8 @@
+{
+  "extends": "@opt-ui/config-tsconfig/tsconfig-library.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "tsconfig.tsbuildinfo"
+  },
+  "include": ["./src", "tsup.config.ts"],
+  "exclude": ["dist", "build", "node_modules"]
+}

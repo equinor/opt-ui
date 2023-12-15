@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"receipt","prefix":"eds","height":"24","width":"24","svgPathData":"M19.5 3.5 18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2v20l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5ZM5 19.09V4.91h14v14.18H5ZM18 17v-2H6v2h12Zm0-6v2H6v-2h12Zm0-2V7H6v2h12Z"})

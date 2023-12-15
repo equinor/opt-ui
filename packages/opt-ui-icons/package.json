@@ -1,0 +1,60 @@
+{
+  "name": "@equinor/opt-ui-icons",
+  "description": "OPT-UI Icons - Set of EDS react icons.",
+  "version": "6.13.3",
+  "license": "MIT",
+  "keywords": [
+    "OPT",
+    "UI",
+    "Icons",
+    "react-icons"
+  ],
+  "author": {
+    "name": "OPT Team",
+    "url": "https://github.com/orgs/equinor/teams/opt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/equinor/opt-ui",
+    "directory": "packages/opt-ui-icons"
+  },
+  "bugs": {
+    "url": "https://github.com/equinor/opt-ui/issues"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": {
+        "default": "./dist/index.mjs",
+        "types": "./dist/index.d.mts"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:ts": "tsc --noEmit",
+    "clean": "rimraf .turbo dist tsconfig.tsbuildinfo",
+    "build": "tsup",
+    "dev": "yarn build --watch",
+    "transform:icons": "node ./scripts/transform-icons.mjs"
+  },
+  "peerDependencies": {
+    "@equinor/opt-ui-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@equinor/eds-icons": "^0.20.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

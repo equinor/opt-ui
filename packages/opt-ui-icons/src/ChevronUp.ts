@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"chevron_up","prefix":"eds","height":"24","width":"24","svgPathData":"m7.41 15.705 4.59-4.58 4.59 4.58 1.41-1.41-6-6-6 6 1.41 1.41Z","sizes":{"small":{"name":"chevron_up_small","prefix":"eds","height":"18","width":"18","svgPathData":"m5.174 12.002 3.825-3.709 3.825 3.709 1.175-1.142-5-4.859-5 4.859 1.175 1.142Z"}}})

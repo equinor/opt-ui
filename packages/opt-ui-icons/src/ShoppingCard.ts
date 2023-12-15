@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"shopping_card","prefix":"eds","height":"24","width":"24","svgPathData":"M18.296 11.97c-.34.62-1 1.03-1.75 1.03h-7.45l-1.1 2h12v2h-12c-1.52 0-2.48-1.63-1.75-2.97l1.35-2.44L3.996 4h-2V2h3.27l.94 2h14.8c.76 0 1.24.82.87 1.48l-3.58 6.49ZM19.306 6H7.156l2.37 5h7.02l2.76-5ZM7.996 18c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2Zm8.01 2c0-1.1.89-2 1.99-2s2 .9 2 2-.9 2-2 2-1.99-.9-1.99-2Z"})

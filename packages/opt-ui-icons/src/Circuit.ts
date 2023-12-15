@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"circuit","prefix":"eds","height":"24","width":"24","svgPathData":"M12 2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V3a1 1 0 0 0-1-1ZM4.707 5.707a1 1 0 0 0 0 1.414l3.847 3.847a4.002 4.002 0 0 0 2.454 5.908A.998.998 0 0 0 11 17v4a1 1 0 0 0 2 0v-4a.998.998 0 0 0-.008-.124 4.002 4.002 0 1 0-3.024-7.322L6.12 5.707a1 1 0 0 0-1.414 0ZM14 13a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"})

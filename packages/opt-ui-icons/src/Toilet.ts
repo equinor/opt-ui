@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"toilet","prefix":"eds","height":"24","width":"24","svgPathData":"M7 6c1.11 0 2-.89 2-2 0-1.11-.89-2-2-2-1.11 0-2 .89-2 2 0 1.11.89 2 2 2Zm-2 8.5V22h4v-7.5h1.5V9c0-1.1-.9-2-2-2h-3c-1.1 0-2 .9-2 2v5.5H5ZM17.5 16v6h-3v-6h-3l2.54-7.63A2 2 0 0 1 15.94 7h.12c.86 0 1.62.55 1.9 1.37L20.5 16h-3ZM18 4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2Z"})

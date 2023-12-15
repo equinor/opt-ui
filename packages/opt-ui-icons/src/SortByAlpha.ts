@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"sort_by_alpha","prefix":"eds","height":"24","width":"24","svgPathData":"m10.495 4.66 2.36-2.36 2.36 2.36h-4.72Zm4.69 14.71-2.33 2.33-2.33-2.33h4.66Zm-13.31-1.64 4.5-11.46h1.64l4.49 11.46h-1.84l-.92-2.45h-5.11l-.92 2.45h-1.84Zm3.37-4.09 1.94-5.18 1.94 5.18h-3.88Zm16.88 2.5h-6.12l5.93-8.6V6.28h-8.3v1.6h5.88l-5.92 8.56v1.29h8.53v-1.59Z"})

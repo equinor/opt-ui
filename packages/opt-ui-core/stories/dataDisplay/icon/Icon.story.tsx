@@ -1,3 +1,4 @@
+import { Accessible } from "@equinor/opt-ui-icons";
 import type { Meta, StoryObj } from "@storybook/react";
 import type { CSSProperties } from "react";
 import { Icon, createSvgIcon } from "../../../src";
@@ -51,8 +52,30 @@ export const WithCreateSvgIcon: Story = {
       svgPathData:
         "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z",
     });
+    ClearIcon.displayName = "ClearIcon"; // For storybook to display the proper component name
     return (
       <ClearIcon
+        {...args}
+        aria-label="Icon"
+        color={color && "var(--color)"}
+        style={
+          color
+            ? ({
+                "--color": color,
+              } as CSSProperties)
+            : undefined
+        }
+      />
+    );
+  },
+};
+
+// Using opt-ui-icons
+export const UsingOptUiIcons: Story = {
+  render: ({ color, ...args }) => {
+    Accessible.displayName = "Accessible"; // For storybook to display the proper component name
+    return (
+      <Accessible
         {...args}
         aria-label="Icon"
         color={color && "var(--color)"}

@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"notifications_important","prefix":"eds","height":"24","width":"24","svgPathData":"M10.5 2.75c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v1.17c3.14.68 5.5 3.48 5.5 6.83v6l2 2v1H3v-1l2-2v-6C5 7.4 7.36 4.6 10.5 3.92V2.75Zm1.5 3c2.76 0 5 2.24 5 5v7H7v-7c0-2.76 2.24-5 5-5Zm-1.99 15.01c0 1.1.89 1.99 1.99 1.99s1.99-.89 1.99-1.99h-3.98ZM13 7.75v4h-2v-4h2Zm0 8v-2h-2v2h2Z"})

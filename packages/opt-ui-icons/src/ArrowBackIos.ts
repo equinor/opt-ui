@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"arrow_back_ios","prefix":"eds","height":"24","width":"24","svgPathData":"m17.835 3.87-1.78-1.77-9.89 9.9 9.9 9.9 1.77-1.77L9.705 12l8.13-8.13Z","sizes":{"small":{"name":"arrow_back_ios_small","prefix":"eds","height":"18","width":"18","svgPathData":"M13.377 2.903 12.04 1.575 4.624 9l7.425 7.425 1.328-1.327L7.279 9l6.098-6.097Z"}}})

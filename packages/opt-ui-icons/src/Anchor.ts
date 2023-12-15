@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"anchor","prefix":"eds","height":"24","width":"24","svgPathData":"M12.909 9.158A3.638 3.638 0 0 0 11.999 2a3.636 3.636 0 0 0-.908 7.158v1.024H8.363V12h2.728v8.106a5.456 5.456 0 0 1-4.546-5.379H4.727a7.273 7.273 0 0 0 14.546 0h-1.819a5.456 5.456 0 0 1-4.545 5.38V12h2.727v-1.818H12.91V9.158Zm.909-3.522a1.818 1.818 0 1 1-3.636 0 1.818 1.818 0 0 1 3.636 0Z"})

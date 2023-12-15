@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"beat","prefix":"eds","height":"24","width":"24","svgPathData":"M11.5 4a1 1 0 0 0-.97.757l-1.845 7.378-.79-1.582a1 1 0 0 0-1.79 0L4.383 14H2a1 1 0 1 0 0 2h3a1 1 0 0 0 .894-.553L7 13.237l1.106 2.21a1 1 0 0 0 1.864-.204l1.53-6.12 2.53 10.12a1 1 0 0 0 1.94 0l1.03-4.12.03.12A1 1 0 0 0 18 16h4a1 1 0 1 0 0-2h-3.22l-.81-3.242a1 1 0 0 0-1.94 0L15 14.877l-2.53-10.12A1 1 0 0 0 11.5 4Z"})

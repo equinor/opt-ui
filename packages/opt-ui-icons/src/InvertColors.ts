@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"invert_colors","prefix":"eds","height":"24","width":"24","svgPathData":"m12 2.345 5.66 5.66c3.12 3.12 3.12 8.19 0 11.31a7.98 7.98 0 0 1-5.66 2.34c-2.05 0-4.1-.78-5.66-2.34-3.12-3.12-3.12-8.19 0-11.31L12 2.345Zm-4.24 15.56a5.928 5.928 0 0 0 4.24 1.76V5.175l-4.24 4.25A5.928 5.928 0 0 0 6 13.665c0 1.6.62 3.1 1.76 4.24Z"})

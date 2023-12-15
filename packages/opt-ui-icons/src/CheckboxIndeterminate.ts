@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"checkbox_indeterminate","prefix":"eds","height":"24","width":"24","svgPathData":"M5 3h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2Zm3 10h8c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1Z","sizes":{"small":{"name":"checkbox_indeterminate_small","prefix":"eds","height":"18","width":"18","svgPathData":"M3.5 2H14c.825 0 2 .925 2 1.75V14c0 .825-1.175 2-2 2H4c-.825 0-2-1.175-2-2V3.75C2 2.925 2.675 2 3.5 2Zm2.3 8h6.4c.44 0 .8-.45.8-1s-.36-1-.8-1H5.8c-.44 0-.8.45-.8 1s.36 1 .8 1Z"}}})

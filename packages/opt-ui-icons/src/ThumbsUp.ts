@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"thumbs_up","prefix":"eds","height":"24","width":"24","svgPathData":"M9 22h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 2 7.58 8.59C7.22 8.95 7 9.45 7 10v10c0 1.1.9 2 2 2Zm0-12 4.34-4.34L12 11h9v2l-3 7H9V10Zm-4 0H1v12h4V10Z","sizes":{"small":{"name":"thumbs_up_small","prefix":"eds","height":"18","width":"18","svgPathData":"M5.625 17h7.313c.674 0 1.25-.4 1.494-.976l2.454-5.64c.073-.184.114-.376.114-.584V8.2c0-.88-.606-1.2-1.5-1.2H10l1.02-4.056.024-.256c0-.328-.138-.632-.357-.848L9.826 1 4.47 6.272A1.578 1.578 0 0 0 4 7.4v8c0 .88.731 1.6 1.625 1.6ZM6 7.5l3.5-4L8 9h7v1l-2 5H6V7.5ZM3 7H1v10h2V7Z"}}})

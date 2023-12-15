@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"laundry","prefix":"eds","height":"24","width":"24","svgPathData":"m6 2 12 .01c1.11 0 2 .88 2 1.99v16c0 1.11-.89 2-2 2H6c-1.11 0-2-.89-2-2V4c0-1.11.89-2 2-2Zm-.01 2L6 20h12V4H5.99ZM8 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm2 1a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm2 13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5Zm2.36-2.64c1.3-1.3 1.3-3.42 0-4.72l-4.72 4.72c1.3 1.3 3.42 1.3 4.72 0Z"})

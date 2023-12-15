@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"dns","prefix":"eds","height":"24","width":"24","svgPathData":"M20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1ZM5 9h14V5H5v4Zm-1 4h16c.55 0 1 .45 1 1v6c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1v-6c0-.55.45-1 1-1Zm15 2H5v4h14v-4ZM7 18.5c-.82 0-1.5-.67-1.5-1.5s.68-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5ZM5.5 7c0 .83.68 1.5 1.5 1.5.83 0 1.5-.68 1.5-1.5S7.82 5.5 7 5.5 5.5 6.17 5.5 7Z"})

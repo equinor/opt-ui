@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"craning","prefix":"eds","height":"24","width":"24","svgPathData":"M5.118 3.528A1 1 0 0 1 6 3h12a1 1 0 0 1 .832 1.555l-4 6A1 1 0 0 1 14 11h-1v1.1a5.002 5.002 0 0 1-1 9.9 5 5 0 0 1-5-5 1 1 0 1 1 2 0 3 3 0 1 0 3-3h-1v-3h-1a1 1 0 0 1-.832-.445l-4-6a1 1 0 0 1-.05-1.027ZM13.465 9H10.535L7.87 5h8.262l-2.666 4ZM12 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"})

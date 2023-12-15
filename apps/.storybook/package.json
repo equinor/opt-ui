@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@equinor/opt-ui-core": "workspace:*",
+    "@equinor/opt-ui-icons": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

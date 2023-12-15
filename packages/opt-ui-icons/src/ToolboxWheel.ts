@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"toolbox_wheel","prefix":"eds","height":"24","width":"24","svgPathData":"M7 3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v10H3V7a2 2 0 0 1 2-2h2V3Zm12 4v3h-2V9h-2v1H9V9H7v1H5V7h14Zm-4 6v-1H9v1H7v-1H5v3h14v-3h-2v1h-2Zm0-10v2H9V3h6ZM2 18h20v2H2v-2Zm5.5 2a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"})

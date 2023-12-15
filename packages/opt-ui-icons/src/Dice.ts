@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"dice","prefix":"eds","height":"24","width":"24","svgPathData":"M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Zm0 2v14H5V5h14ZM6 16.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM7.5 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm3 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm6 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM15 7.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"})

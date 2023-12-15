@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"train","prefix":"eds","height":"24","width":"24","svgPathData":"M4 6.5c0-3.5 4-4 8-4s8 .5 8 4V16c0 1.93-1.57 3.5-3.5 3.5L18 21v.5h-2l-2-2h-4l-2 2H6V21l1.5-1.5C5.57 19.5 4 17.93 4 16V6.5Zm4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm7 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm-3.5-9c3.51 0 4.96.48 5.57 1H6.43c.61-.52 2.06-1 5.57-1Zm-1 3H6v3h5v-3Zm7 8.5c0 .83-.67 1.5-1.5 1.5h-9c-.83 0-1.5-.67-1.5-1.5v-3.5h12V16Zm-5-5.5h5v-3h-5v3Z"})

@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"onshore_drone","prefix":"eds","height":"24","width":"24","svgPathData":"M5.5 6 4 7.5l1.06 1.06A1.5 1.5 0 0 0 6.122 9H7.38a1.5 1.5 0 0 0 1.06-.44L10.5 6.5h8.326L16.403 11H4a3 3 0 1 0 0 6h17a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2.326l2.176-4.041A1.5 1.5 0 1 0 19.382 4.5H10.5L8.44 2.44A1.5 1.5 0 0 0 7.378 2H6.12a1.5 1.5 0 0 0-1.06.44L4 3.5 5.5 5l1-1H7l1.5 1.5L7 7h-.5l-1-1ZM21 15H4a1 1 0 1 1 0-2h17v2ZM5 22a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm5-2a2 2 0 1 0 4 0 2 2 0 0 0-4 0Zm9 2a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"})

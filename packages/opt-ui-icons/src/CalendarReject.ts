@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"calendar_reject","prefix":"eds","height":"24","width":"24","svgPathData":"M18 4h1c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h1V2h2v2h8V2h2v2ZM5 20h14V10H5v10ZM5 8V6h14v2H5Zm4.29 10.47-1.06-1.06 2.44-2.44-2.44-2.44 1.06-1.06 2.44 2.44 2.44-2.44 1.06 1.06-2.44 2.44 2.44 2.44-1.06 1.06-2.44-2.44-2.44 2.44Z"})

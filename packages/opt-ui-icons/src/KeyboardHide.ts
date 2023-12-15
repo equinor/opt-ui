@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"keyboard_hide","prefix":"eds","height":"24","width":"24","svgPathData":"M4 2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l.01-10c0-1.1.89-2 1.99-2Zm0 12h16V4H4v10Zm7-9h2v2h-2V5Zm2 3h-2v2h2V8ZM8 5h2v2H8V5Zm2 3H8v2h2V8ZM5 8h2v2H5V8Zm2-3H5v2h2V5Zm1 6h8v2H8v-2Zm8-3h-2v2h2V8Zm-2-3h2v2h-2V5Zm5 3h-2v2h2V8Zm-2-3h2v2h-2V5Zm-5 17-4-4h8l-4 4Z"})

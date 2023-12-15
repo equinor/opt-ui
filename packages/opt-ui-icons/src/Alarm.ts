@@ -1,0 +1,3 @@
+import { createSvgIcon } from "@equinor/opt-ui-core";
+
+export default createSvgIcon({"name":"alarm","prefix":"eds","height":"24","width":"24","svgPathData":"M7.945 3.441 6.664 1.905 2.057 5.75l1.28 1.536L7.946 3.44Zm9.392-1.535 4.608 3.843-1.282 1.536-4.607-3.843 1.281-1.536Zm-4.836 6.189H11v6l4.75 2.85.75-1.23-4-2.37v-5.25Zm-.5-4a9 9 0 1 0 .001 18.001 9 9 0 0 0-.001-18.001Zm-7 9c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7-7 3.14-7 7Z"})

@@ -24,7 +24,7 @@ interface CreateSvgIconProps extends Omit<IconProps, "children"> {
  * @returns The SVG icon component.
  */
 export function createSvgIcon({ width, height, svgPathData }: SvgIconProps) {
-  const SvgIcon = memo(
+  return memo(
     forwardRef<HTMLSpanElement, CreateSvgIconProps>(
       function SvgIcon(props, ref) {
         return (
@@ -48,6 +48,4 @@ export function createSvgIcon({ width, height, svgPathData }: SvgIconProps) {
       }
     ) as IconComponent
   );
-  SvgIcon.displayName = "SvgIcon";
-  return SvgIcon;
 }
