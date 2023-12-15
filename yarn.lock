@@ -3128,6 +3128,7 @@ __metadata:
     "@storybook/addon-essentials": "npm:7.6.4"
     "@storybook/addon-interactions": "npm:7.6.4"
     "@storybook/addon-links": "npm:7.6.4"
+    "@storybook/addon-storysource": "npm:7.6.4"
     "@storybook/blocks": "npm:7.6.4"
     "@storybook/builder-vite": "npm:7.6.4"
     "@storybook/manager-api": "npm:7.6.4"
@@ -3138,7 +3139,7 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     storybook: "npm:7.6.4"
-    vite: "npm:5.0.8"
+    vite: "npm:5.0.9"
   peerDependencies:
     "@equinor/opt-ui-styled-system": "*"
   languageName: unknown
@@ -4259,6 +4260,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-storysource@npm:7.6.4":
+  version: 7.6.4
+  resolution: "@storybook/addon-storysource@npm:7.6.4"
+  dependencies:
+    "@storybook/source-loader": "npm:7.6.4"
+    estraverse: "npm:^5.2.0"
+    tiny-invariant: "npm:^1.3.1"
+  checksum: d0f4c62761ae122513cd82e6e9a58430a170cee4a9491c8f22c6d3b202d36100275efe6e426859a9c264e2d9d88c89616c76639ff12428ecf5d703d02c916d60
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-toolbars@npm:7.6.4":
   version: 7.6.4
   resolution: "@storybook/addon-toolbars@npm:7.6.4"
@@ -4813,6 +4825,19 @@ __metadata:
     memoizerific: "npm:^1.11.3"
     qs: "npm:^6.10.0"
   checksum: 1297d011e18d24d17e1a0f319a40ee3102c1bdbf3b79af048e719284f22ab59b6a433898baacf5f78c0e4b79d9b38361476005eca8f8f2e2a5789c13f3401869
+  languageName: node
+  linkType: hard
+
+"@storybook/source-loader@npm:7.6.4":
+  version: 7.6.4
+  resolution: "@storybook/source-loader@npm:7.6.4"
+  dependencies:
+    "@storybook/csf": "npm:^0.1.2"
+    "@storybook/types": "npm:7.6.4"
+    estraverse: "npm:^5.2.0"
+    lodash: "npm:^4.17.21"
+    prettier: "npm:^2.8.0"
+  checksum: 982f14a404f5a521f5f766522780c9a989e17a51fa023601d05dd9d674ffbe7d60328fae740e6ace3626500ac45efc9071f954ec338a9cc83784b697d7075c50
   languageName: node
   linkType: hard
 
@@ -17025,9 +17050,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:5.0.8":
-  version: 5.0.8
-  resolution: "vite@npm:5.0.8"
+"vite@npm:5.0.9":
+  version: 5.0.9
+  resolution: "vite@npm:5.0.9"
   dependencies:
     esbuild: "npm:^0.19.3"
     fsevents: "npm:~2.3.3"
@@ -17061,7 +17086,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 74fa546f3eb16bd2c49f8267ec83f1aded8850cd5717b9809cead4c0178ee36462ef7723fe669e5801da86f9220b865689ed6ab94ee1965b92f0b122cdefb298
+  checksum: 3ebc81a4184d5dfcf6a09cd1b4fc48ce92ab145b74e473df7103581f1a9f2b456f6f983a4b115b8d4b29e116df6b5bb3bc15d1623f01a85b1e818aeab6debd26
   languageName: node
   linkType: hard
 

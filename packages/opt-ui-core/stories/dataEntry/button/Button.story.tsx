@@ -4,7 +4,7 @@ import { Button } from "../../../src";
 // Prop types
 type Story = StoryObj<typeof Button>;
 
-// Base button
+// Base story
 export const Base: Story = {
   args: {
     children: "Button",

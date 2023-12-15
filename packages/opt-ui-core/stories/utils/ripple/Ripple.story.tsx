@@ -4,7 +4,7 @@ import { Ripple } from "../../../src";
 // Prop types
 type Story = StoryObj<typeof Ripple>;
 
-// Base button
+// Base story
 export const Base: Story = {
   render: (args) => {
     return (

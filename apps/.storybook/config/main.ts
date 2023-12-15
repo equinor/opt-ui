@@ -8,6 +8,7 @@ const config: StorybookConfig = {
     "../../../packages/**/stories/**/*.@(stories|story).@(ts|tsx)",
   ],
   addons: [
+    "@storybook/addon-storysource",
     "@storybook/addon-a11y",
     "@storybook/addon-links",
     "@storybook/addon-essentials",

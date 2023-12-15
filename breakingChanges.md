@@ -18,6 +18,10 @@ List of breaking changes by components
 </Button>
 ```
 
+## BaseIcon
+
+- BaseIcon renamed to Icon
+
 ## Utils
 
 The next utilities has been removed because it force users to use specific solutions which wasn't optimal:
