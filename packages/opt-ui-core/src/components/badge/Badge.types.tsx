@@ -15,11 +15,6 @@ export interface BadgeProps extends HTMLStyledProps<"div">, BadgeRecipeProps {
    * If `true`, the button will be disabled.
    * @defaultValue false
    */
-  disabled?: boolean;
-  /**
-   * Element placed before the children.
-   * @defaultValue undefined
-   */
   startIcon?: ReactNode;
   /**
    * Element placed after the children.

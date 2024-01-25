@@ -1,5 +1,5 @@
 import { badgeRecipe } from "@equinor/opt-ui-base/recipes";
-import { css } from "@equinor/opt-ui-styled-system/css";
+import { css, cx } from "@equinor/opt-ui-styled-system/css";
 import { styled } from "@equinor/opt-ui-styled-system/jsx";
 import { forwardRef } from "react";
 import type { BadgeProps } from ".";
@@ -10,12 +10,10 @@ const Badge = forwardRef<HTMLDivElement, BadgeProps>(
       className,
       children,
       css: cssProp,
-      variant = "contained",
+      variant = "default",
       variantColor = "primary",
-      disabled = false,
       startIcon = undefined,
       endIcon = undefined,
-      iconSize = 18,
       visible = true,
       ...other
     },
@@ -24,13 +22,26 @@ const Badge = forwardRef<HTMLDivElement, BadgeProps>(
     const classes = badgeRecipe.raw({
       variant,
       variantColor,
-      disabled,
     });
     return visible ? (
       <styled.div ref={ref}>
-        {endIcon && <span className={css(classes.adornment)}>{startIcon}</span>}
+        <styled.span
+          className={cx(
+            css(classes.root, cssProp),
+            "opt-badge",
+            `opt-badge--${variant}`,
+            `opt-badge--${variantColor}`,
+            className
+          )}
+          {...other}
+        >
+          {endIcon && <span className={css(classes.adornment)}>{endIcon}</span>}
+          10
+          {startIcon && (
+            <span className={css(classes.adornment)}>{startIcon}</span>
+          )}
+        </styled.span>
         {children}
-        {endIcon && <span className={css(classes.adornment)}>{endIcon}</span>}
       </styled.div>
     ) : null;
   }
