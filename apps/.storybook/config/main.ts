@@ -31,7 +31,10 @@ const config: StorybookConfig = {
     reactDocgenTypescriptOptions: {
       shouldExtractLiteralValuesFromEnum: true,
       // shouldExtractValuesFromUnion: true,
-      include: ["../../packages/opt-ui-core/**/**.tsx"],
+      include: [
+        "../../packages/opt-ui-core/**/**.tsx",
+        "../../packages/opt-ui-icons/**/**.tsx",
+      ],
     },
   },
   staticDirs: ["./static"],

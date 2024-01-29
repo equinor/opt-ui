@@ -5,8 +5,10 @@ export default defineConfig({
   presets: ["@pandacss/dev/presets", optUiPreset()],
   preflight: true,
   include: [
-    "../../packages/opt-ui-base/**/*.{ts,tsx}", // From apps/workspace directory
-    "../../packages/opt-ui-core/**/*.{ts,tsx}", // From apps/workspace directory
+    // Directory starts from apps/workspace directory
+    "../../packages/opt-ui-base/**/*.{ts,tsx}",
+    "../../packages/opt-ui-core/**/*.{ts,tsx}",
+    "../../packages/opt-ui-icons/**/*.{ts,tsx}",
   ],
   exclude: [],
   emitPackage: true,

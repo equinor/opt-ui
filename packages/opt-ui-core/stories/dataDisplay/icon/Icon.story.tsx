@@ -1,6 +1,6 @@
-import { Accessible } from "@equinor/opt-ui-icons";
 import type { Meta, StoryObj } from "@storybook/react";
 import type { CSSProperties } from "react";
+import { Accessible } from "../../../../opt-ui-icons/src";
 import { Icon, createSvgIcon } from "../../../src";
 
 // Prop types
