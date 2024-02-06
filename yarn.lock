@@ -2013,7 +2013,6 @@ __metadata:
   dependencies:
     "@equinor/opt-ui-base": "workspace:*"
   peerDependencies:
-    "@equinor/opt-ui-icons": "workspace:*"
     "@equinor/opt-ui-styled-system": "*"
     "@pandacss/dev": ">=0.18"
     react: ">=18"
@@ -3143,7 +3142,7 @@ __metadata:
   dependencies:
     "@equinor/opt-ui-core": "workspace:*"
     "@equinor/opt-ui-icons": "workspace:*"
-    "@storybook/addon-a11y": "npm:7.6.4"
+    "@storybook/addon-a11y": "npm:7.6.13"
     "@storybook/addon-essentials": "npm:7.6.4"
     "@storybook/addon-interactions": "npm:7.6.4"
     "@storybook/addon-links": "npm:7.6.4"
@@ -4120,13 +4119,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:7.6.4":
-  version: 7.6.4
-  resolution: "@storybook/addon-a11y@npm:7.6.4"
+"@storybook/addon-a11y@npm:7.6.13":
+  version: 7.6.13
+  resolution: "@storybook/addon-a11y@npm:7.6.13"
   dependencies:
-    "@storybook/addon-highlight": "npm:7.6.4"
+    "@storybook/addon-highlight": "npm:7.6.13"
     axe-core: "npm:^4.2.0"
-  checksum: a4195ce7847c52669d8201c6414f651c3b7cde13dbb649840d6d87d88cdc421442ba2bd11cc3c55844e9871fa1c3e403135da418ba5241b747f53baff0c548a8
+  checksum: 0248665dd748556eb42d3500c9e36d557f51b2420729b48352da53caffe5921a668d5b92ebac4dcc47f37d1f92f7fb30a40a8cb729e041411dc3c04bb8dad50f
   languageName: node
   linkType: hard
 
@@ -4218,6 +4217,15 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 0b75b2c2dbab5f0fbcd655ef319264b17333f35c85084cf0e7a20cc242ec0a2d78c7aaa2c7ba9ffc7e1459476bec1d5cb91ffdd14742310ceb24e32faed16eca
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:7.6.13":
+  version: 7.6.13
+  resolution: "@storybook/addon-highlight@npm:7.6.13"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+  checksum: f6282e97dc536044d25a8ba3e80e53ea6108f172b7fb65e362c6a30e9fe2b5f87bbcbe343302e9687cfcdd591183959dca739576e37ba4f29d0528bfcf3316cf
   languageName: node
   linkType: hard
 
