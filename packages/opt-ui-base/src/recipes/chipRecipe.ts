@@ -1,4 +1,7 @@
-import { RecipeVariantProps, sva } from "@equinor/opt-ui-styled-system/css";
+import {
+  sva,
+  type RecipeVariantProps,
+} from "@equinor/opt-ui-styled-system/css";
 
 export const chipRecipe = sva({
   slots: ["root", "adornment"],
