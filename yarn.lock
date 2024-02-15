@@ -2013,7 +2013,6 @@ __metadata:
   dependencies:
     "@equinor/opt-ui-base": "workspace:*"
   peerDependencies:
-    "@equinor/opt-ui-icons": "workspace:*"
     "@equinor/opt-ui-styled-system": "*"
     "@pandacss/dev": ">=0.18"
     react: ">=18"
@@ -3154,7 +3153,7 @@ __metadata:
     "@storybook/react": "npm:7.6.4"
     "@storybook/react-vite": "npm:7.6.4"
     "@storybook/testing-library": "npm:0.2.2"
-    "@storybook/theming": "npm:7.6.4"
+    "@storybook/theming": "npm:7.6.16"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     storybook: "npm:7.6.4"
@@ -4466,6 +4465,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/client-logger@npm:7.6.16":
+  version: 7.6.16
+  resolution: "@storybook/client-logger@npm:7.6.16"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+  checksum: 9806db18f96cf09c2937465a9c6714e156b834e9e99d2807e2f22dc52ec27135951a5545e67f88b2630a5a9bae0eeac5a79198fc22549392f90c76438b87f782
+  languageName: node
+  linkType: hard
+
 "@storybook/client-logger@npm:7.6.4":
   version: 7.6.4
   resolution: "@storybook/client-logger@npm:7.6.4"
@@ -4884,6 +4892,21 @@ __metadata:
     "@testing-library/user-event": "npm:^14.4.0"
     ts-dedent: "npm:^2.2.0"
   checksum: 3179c74148c92267ea449068ce9fb00bf960dbf06654354de7869428415d16dc730a0d58b5adca7619d21e5a058ae0bf713e34c09be8bca574388ec0106c5068
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:7.6.16":
+  version: 7.6.16
+  resolution: "@storybook/theming@npm:7.6.16"
+  dependencies:
+    "@emotion/use-insertion-effect-with-fallbacks": "npm:^1.0.0"
+    "@storybook/client-logger": "npm:7.6.16"
+    "@storybook/global": "npm:^5.0.0"
+    memoizerific: "npm:^1.11.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 133bf631de542e82534afd69bd73da9be867d43b813a9a9993a72f05c441ed454f14b5357f3e5cad1a32c1cf1f87f10b30e91eaf96396154ad50df21d002c1ae
   languageName: node
   linkType: hard
 
